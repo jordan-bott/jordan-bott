@@ -18,7 +18,7 @@ def main():
     updated_game_data = game_data
 
     # check if there is a wordle index
-    if game_data["wordle_index"] is None:
+    if game_data["wordle_index"] == "":
         updated_game_data["wordle_index"] = random.randint(0, 2315)
 
     # pull wordle word based on wordle index

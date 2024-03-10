@@ -31,7 +31,7 @@ Click "start a new game" to play again!
     file.close()
 
     blank_game_data = {
-        "wordle_index": None,
+        "wordle_index": "",
         "turn_number": 0,
         "players": [],
         "guessed_words": [],
