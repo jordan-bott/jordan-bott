@@ -1,1 +1,1 @@
-game_data = {"wordle_index": 802, "turn_number": 1, "players": ["jordan-bott"], "schema": "<img src=\"./wordle/tiles/grey/C.svg\" width=\"40\" /><img src=\"./wordle/tiles/green/R.svg\" width=\"40\" /><img src=\"./wordle/tiles/green/A.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/N.svg\" width=\"40\" /><img src=\"./wordle/tiles/green/E.svg\" width=\"40\" /><br/>", "guessed_words": ["CRANE"]}
+game_data = {"wordle_index": null, "turn_number": 0, "players": [], "guessed_words": [], "schema": ""}
