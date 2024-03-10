@@ -8,7 +8,7 @@ on:
 jobs:
   wordle-guess:
     runs-on: ubuntu-latest
-    # if: startsWith(github.event.issue.title, 'wordlemove|')
+    # if: startsWith(github.event.issue.title, 'wordleguess|')
     steps:
 
     - name: Checkout
