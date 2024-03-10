@@ -13,10 +13,9 @@ Let's play wordle! Everyone is welcome to participate!
 
 Click "make a guess" below to contribute.
 
-The game is on guess # 0
-Whoops! The last guess made was **invalid**.
+The game is on guess # 1
 
 [MAKE A GUESS](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
 
-
+<img src="./wordle/tiles/grey/C.svg" width="40" /><img src="./wordle/tiles/green/R.svg" width="40" /><img src="./wordle/tiles/green/A.svg" width="40" /><img src="./wordle/tiles/grey/N.svg" width="40" /><img src="./wordle/tiles/green/E.svg" width="40" /><br/>
 
