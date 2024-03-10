@@ -28,3 +28,15 @@ Click "start a new game" to try again!
     file = open("README.md", "w")
     file.write(readme_content)
     file.close()
+
+    blank_game_data = {
+        "wordle_index": None,
+        "turn_number": 0,
+        "players": [],
+        "guessed_words": [],
+        "schema": "",
+
+    }
+    game_data_file = open("wordle/game_data.py", "w")
+    game_data_file.write(f"game_data = {json.dumps(blank_game_data)}")
+    game_data_file.close()
