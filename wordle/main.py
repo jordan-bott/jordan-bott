@@ -13,7 +13,6 @@ import os
 import json
 
 
-
 def main():
 
     updated_game_data = game_data
@@ -29,7 +28,7 @@ def main():
     issue_title = os.environ.get("ISSUE_TITLE")
     guess = issue_title[13:18].upper()
 
-    print(guess)
+    print("guess:", guess)
 
     # check if guess is valid
     is_valid = check_word_validity(guess, updated_game_data["guessed_words"])

@@ -1,4 +1,5 @@
 from game_data import game_data
+import json
 
 
 def handle_win(wordle_word):
