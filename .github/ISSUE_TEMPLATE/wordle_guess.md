@@ -12,3 +12,5 @@ We are ready for your guess! Simply place your 5 letter word guess in between th
 Example:
 
 wordleguess|[hello]
+
+You will see your guess appear in the [readme](https://github.com/jordan-bott) in roughly 30 seconds! Thanks for playing!
