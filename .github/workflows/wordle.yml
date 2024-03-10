@@ -24,7 +24,7 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Handle Move
-      environment:
+      env:
         ISSUE_TITLE: ${{ github.event.issue.title }}
         ISSUE_USER: ${{ github.event.issue.user.login }}
       run: |
