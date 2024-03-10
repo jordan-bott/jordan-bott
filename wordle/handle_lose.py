@@ -1,8 +1,7 @@
 from game_data import game_data
 
 
-def update_readme():
-
+def handle_lose(wordle_word):
     readme_content = f"""
 Hi! 👋🏼 I'm Jordan, welcome to my github!
 
@@ -16,11 +15,11 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 
 Let's play wordle! Everyone is welcome to participate!
 
-Click "make a guess" below to contribute.
+We lost this one 🥲. The word was: {wordle_word}
 
-The game is on guess # {game_data["turn_number"]}
+Click "start a new game" to try again!
 
-[MAKE A GUESS](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
+[START A NEW GAME](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
 
 {game_data["schema"]}
 

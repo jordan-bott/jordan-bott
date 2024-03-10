@@ -8,7 +8,7 @@ on:
 jobs:
   wordle-guess:
     runs-on: ubuntu-latest
-    # if: startsWith(github.event.issue.title, 'wordleguess|')
+    if: startsWith(github.event.issue.title, 'wordleguess|')
     steps:
 
     - name: Checkout
@@ -24,8 +24,11 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Handle Move
+      environment:
+        ISSUE_TITLE: ${{ github.event.issue.title }}
+        ISSUE_USER: ${{ github.event.issue.user.login }}
       run: |
-        python my_script.py
+        python wordle/main.py
         echo 'the script ran'
 
     - name: Commit Files
