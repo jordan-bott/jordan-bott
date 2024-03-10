@@ -1,1 +1,1 @@
-game_data = {"wordle_index": "", "turn_number": 0, "players": [], "guessed_words": [], "schema": ""}
+game_data = {"wordle_index": 1519, "turn_number": 1, "players": ["jordan-bott"], "guessed_words": ["PLANT"], "schema": "<img src=\"./wordle/tiles/grey/P.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/L.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/A.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/N.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/T.svg\" width=\"40\" /><br/>"}
