@@ -29,6 +29,7 @@ def main():
     guess = issue_title[13:18].upper()
 
     print("guess:", guess)
+    print("game data:", updated_game_data)
 
     # check if guess is valid
     is_valid = check_word_validity(guess, updated_game_data["guessed_words"])
