@@ -27,7 +27,7 @@ def main():
 
     # pull guess from issue meta data
     issue_title = os.environ.get("ISSUE_TITLE")
-    guess = issue_title[12:17].upper()
+    guess = issue_title[13:18].upper()
 
     print(guess)
 
