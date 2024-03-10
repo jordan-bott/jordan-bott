@@ -1,6 +1,7 @@
 name: "Wordle"
 
 on:
+  workflow_dispatch:
   issues:
     types: [opened]
 
