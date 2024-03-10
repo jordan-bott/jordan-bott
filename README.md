@@ -14,3 +14,4 @@ JavaScript   1 min           ████░░░░░░░░░░░░░
 ```
 
 <!--END_SECTION:waka-->
+Added to the readme
