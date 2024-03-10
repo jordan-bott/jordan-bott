@@ -50,3 +50,12 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  update-waka:
+    name: WakaReadme DevMetrics
+    needs: wordle-guess
+    runs-on: ubuntu-latest
+    steps:
+      - uses: athul/waka-readme@master # this action name
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
