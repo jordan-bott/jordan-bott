@@ -36,6 +36,5 @@ Let's play wordle! Everyone is welcomed to take a turn.
 
 Click "make a guess" below to contribute:
 
-<img src="./wordle/tiles/green/H.svg" />
-
-![green H](./wordle/tiles/green/H.svg | width="100")
+<img src="./wordle/tiles/green/H.svg" width="40" /><img src="./wordle/tiles/green/E.svg" width="40" /><img src="./wordle/tiles/green/L.svg" width="40" /><img src="./wordle/tiles/green/L.svg" width="40" /><img src="./wordle/tiles/green/O.svg" width="40" /><br/>
+<img src="./wordle/tiles/green/H.svg" width="40" />
