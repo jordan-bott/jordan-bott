@@ -27,9 +27,9 @@ def main():
 
     # pull guess from issue meta data
     issue_title = os.environ.get("ISSUE_TITLE")
-    # if issue_title is None:
-    #     issue_title = "wordlemove|[leave]"
     guess = issue_title[12:17].upper()
+
+    print(guess)
 
     # check if guess is valid
     is_valid = check_word_validity(guess, updated_game_data["guessed_words"])
@@ -40,8 +40,6 @@ def main():
 
     # pull user from issue meta data
     user = os.environ.get("ISSUE_USER")
-    # if user is None:
-    #     user = "jordan-bott"
     if user not in updated_game_data["players"]:
         updated_game_data["players"].append(user)
 
