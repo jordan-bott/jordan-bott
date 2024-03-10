@@ -1,7 +1,7 @@
 ---
 name: wordle_guess
-about: wordleguess|[PUT 5 LETTER WORD HERE]
-title: ''
+about: For making a wordle guess
+title: wordleguess|[PUT 5 LETTER WORD HERE]
 labels: ''
 assignees: ''
 
