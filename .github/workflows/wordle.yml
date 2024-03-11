@@ -57,7 +57,7 @@ jobs:
       env:
         GH_TOKEN: ${{ github.token }}
       run: |
-        gh issue close ${{github.event.issue.id}} -c "Thank you for playing!"
+        gh issue close ${{github.event.issue.number}} -c "Thank you for playing!"
 
   update-waka:
     name: WakaReadme DevMetrics
