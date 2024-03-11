@@ -53,6 +53,10 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Close Issue
+      run: |
+        gh issue close ${{github.event.issue.url}} -c "Thank you for playing!"
+
   update-waka:
     name: WakaReadme DevMetrics
     needs: wordle-guess
