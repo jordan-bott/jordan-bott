@@ -19,6 +19,6 @@ def handle_player_stats():
         table_content += f"""
 | {item} | {player_data[item]["total_moves"]} | {player_data[item]["total_winning_moves"]} | {player_data[item]["total_invalid_guesses"]} | {first_move} | {recent_move} | {most_guess} ({most_guess_num} times!) |"""
 
-    player_stat_file = open("stat_sheets/PlayerData.md", "w")
+    player_stat_file = open("wordle/stat_sheets/PlayerData.md", "w")
     player_stat_file.write(table_content)
     player_stat_file.close()

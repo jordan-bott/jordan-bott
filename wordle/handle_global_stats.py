@@ -20,6 +20,6 @@ def handle_global_stats():
 | Most Guessed Word | {most_guessed} ({most_guess_num} times!) |
 """
 
-    global_stat_file = open("stat_sheets/GlobalData.md", "w")
+    global_stat_file = open("wordle/stat_sheets/GlobalData.md", "w")
     global_stat_file.write(content)
     global_stat_file.close()
