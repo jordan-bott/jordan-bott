@@ -6,5 +6,5 @@ lifetime_data = {
     "loses": 0,
     "invalid_guesses": 1,
     "words_guessed": {"CRANE": 1, "FEARS": 1, "BLEAK": 1, "EASEL": 1},
-    "wordle_words": [true],
+    "wordle_words": [],
 }

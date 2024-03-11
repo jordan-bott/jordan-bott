@@ -1,4 +1,5 @@
 from lifetime_data import lifetime_data
+from handle_global_stats import handle_global_stats
 import json
 
 
@@ -40,3 +41,5 @@ def update_lifetime_data(
     lifetime_data_file = open("wordle/lifetime_data.py", "w")
     lifetime_data_file.write(f"lifetime_data = {json.dumps(updated_lifetime_data)}")
     lifetime_data_file.close()
+
+    handle_global_stats()
