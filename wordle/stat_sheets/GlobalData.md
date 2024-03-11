@@ -1,9 +1,9 @@
 |              |                |
 | ---------------- | ----------------------------- |
-| Total Moves Made | 16 |
-| Total Games Played | 5 |
-| Total Players Participated | 4 |
-| Total Wins | 4 |
+| Total Moves Made | 13 |
+| Total Games Played | 2 |
+| Total Players Participated | 2 |
+| Total Wins | 2 |
 | Total Losses | 0 |
-| Total Invalid Guesses | 1 |
-| Most Guessed Word | LATHE (1 times!) |
+| Total Invalid Guesses | 0 |
+| Most Guessed Word | PLANT (2 times!) |
