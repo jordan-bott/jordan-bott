@@ -1,1 +1,1 @@
-player_data = {"jordan-bott": {"total_moves": 3, "total_winning_moves": 0, "first_move_made": "", "most_recent_move": "2024-03-11 00:27:26.0833022024-03-11 00:31:13.162186", "guess_history": ["UNDER", "QUEER"]}}
+player_data = {"jordan-bott": {"total_moves": 4, "total_winning_moves": 0, "first_move_made": "", "most_recent_move": "2024-03-11 00:27:26.0833022024-03-11 00:31:13.1621862024-03-11 00:56:31.413407", "guess_history": ["UNDER", "QUEER", "QUITE"]}}
