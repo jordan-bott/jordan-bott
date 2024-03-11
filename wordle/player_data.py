@@ -8,11 +8,11 @@ player_data = {
         "guess_history": ["UNDER", "QUEER", "QUITE", "QUICK", "CRANE", "FEARS"],
     },
     "IanKBovard": {
-        "total_moves": 1,
-        "total_winning_moves": 0,
+        "total_moves": 2,
+        "total_winning_moves": 1,
         "total_invalid_guesses": 0,
         "first_move_made": "2024-03-11 02:33:21.671965",
-        "most_recent_move": "2024-03-11 02:33:21.671977",
-        "guess_history": ["BLEAK"],
+        "most_recent_move": "2024-03-11 02:33:21.6719772024-03-11 02:36:12.481907",
+        "guess_history": ["BLEAK", "EASEL"],
     },
 }
