@@ -3,7 +3,7 @@ from new_game_data import new_game_data
 import json
 
 
-def handle_win(wordle_word):
+def handle_win(wordle_word, user):
 
     letter_schema = "".join(game_data["letter_schema"])
 
@@ -25,6 +25,8 @@ We won! 🎉 The word was: {wordle_word}
 Click "start a new game" to play again!
 
 [START A NEW GAME](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
+
+Most Recent Player: {user}
 
 | Current Game | Letters |
 | ------------ | ------- |

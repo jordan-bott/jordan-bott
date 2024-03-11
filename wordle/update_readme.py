@@ -1,7 +1,7 @@
 from game_data import game_data
 
 
-def update_readme():
+def update_readme(user):
 
     letter_schema = "".join(game_data["letter_schema"])
 
@@ -16,13 +16,15 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
 
-Let's play wordle! Everyone is welcome to participate!
+# Let's Play Wordle!
+
+Everyone is welcome to participate! This is an **asynchronous**, and **collaborative** version of wordle, where players make one move at a time. Please make as many or as few moves as you would like!
 
 Click "make a guess" below to contribute.
 
-The game is on guess # {game_data["turn_number"]}
-
 [MAKE A GUESS](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
+
+Most Recent Player: {user}
 
 | Current Game | Letters |
 | ------------ | ------- |

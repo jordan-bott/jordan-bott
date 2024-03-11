@@ -1,7 +1,7 @@
 from game_data import game_data
 
 
-def handle_invalid_guess():
+def handle_invalid_guess(user):
     print("Whoops that guess wasn't valid.")
 
     letter_schema = "".join(game_data["letter_schema"])
@@ -21,10 +21,11 @@ Let's play wordle! Everyone is welcome to participate!
 
 Click "make a guess" below to contribute.
 
-The game is on guess # {game_data["turn_number"]}<br />
 Whoops! The last guess made was **invalid**.
 
 [MAKE A GUESS](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
+
+Most Recent Player: {user}
 
 | Current Game | Letters |
 | ------------ | ------- |
