@@ -1,12 +1,9 @@
 from game_data import game_data
-from lifetime_data import lifetime_data
-import json
 
 
 def handle_invalid_guess():
     print("Whoops that guess wasn't valid.")
-    updated_lifetime_data = lifetime_data
-    lifetime_data["invalid_guesses"] += 1
+
 
     readme_content = f"""
 Hi! 👋🏼 I'm Jordan, welcome to my github!
@@ -35,7 +32,3 @@ Whoops! The last guess made was **invalid**.
     file = open("README.md", "w")
     file.write(readme_content)
     file.close()
-
-    lifetime_data_file = open("wordle/lifetime_data.py", "w")
-    lifetime_data_file.write(f"lifetime_data = {json.dumps(updated_lifetime_data)}")
-    lifetime_data_file.close()

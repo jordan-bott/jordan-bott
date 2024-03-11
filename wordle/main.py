@@ -32,17 +32,19 @@ def main():
 
     print("guess:", guess)
 
+    # pull user from issue meta data
+    user = os.environ.get("ISSUE_USER")
+    if user not in updated_game_data["players"]:
+        updated_game_data["players"].append(user)
+
     # check if guess is valid
     is_valid = check_word_validity(guess, updated_game_data["guessed_words"])
     if is_valid:
         updated_game_data["guessed_words"].append(guess)
     else:
+        is_new_player = update_player_data(user, guess, False)
+        update_lifetime_data(is_new_player, False, guess, wordle_word)
         return handle_invalid_guess()
-
-    # pull user from issue meta data
-    user = os.environ.get("ISSUE_USER")
-    if user not in updated_game_data["players"]:
-        updated_game_data["players"].append(user)
 
     # create schemas
     schema_info = create_schema(wordle_word, guess)

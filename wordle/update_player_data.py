@@ -3,19 +3,23 @@ from datetime import datetime
 import json
 
 
-def update_player_data(player, guess, is_win):
+def update_player_data(player, guess, is_win, is_valid=True):
     updated_player_data = player_data
     new_player = False
 
     if player_data.get(player):
         updated_player_data[player]["total_moves"] += 1
         updated_player_data[player]["most_recent_move"] += str(datetime.now())
-        updated_player_data[player]["guess_history"].append(guess)
+        if is_valid:
+            updated_player_data[player]["guess_history"].append(guess)
+        else:
+            update_player_data[player]["total_invalid_guesses"] += 1
     else:
         new_player = True
         updated_player_data[player] = {
             "total_moves": 1,
             "total_winning_moves": 0,
+            "total_invalid_guesses": 0,
             "first_move_made": str(datetime.now()),
             "most_recent_move": str(datetime.now()),
             "guess_history": [guess],
