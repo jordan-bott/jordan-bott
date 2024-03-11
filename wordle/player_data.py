@@ -45,4 +45,12 @@ player_data = {
         "most_recent_move": "2024-03-11",
         "guess_history": {"COEST": 1},
     },
+    "emilyvictany": {
+        "total_moves": 1,
+        "total_winning_moves": 0,
+        "total_invalid_guesses": 0,
+        "first_move_made": "2024-03-11",
+        "most_recent_move": "2024-03-11",
+        "guess_history": {"ADIEU": 1},
+    },
 }
