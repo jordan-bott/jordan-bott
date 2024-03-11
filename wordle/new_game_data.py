@@ -7,6 +7,7 @@ def new_game_data():
         "wordle_index": "",
         "turn_number": 0,
         "guessed_words": [],
+        "players": [],
         "schema": "",
         "letter_schema": "".join(new_letter_schmea),
     }
