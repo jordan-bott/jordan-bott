@@ -1,5 +1,5 @@
 lifetime_data = {
-    "moves_made": 20,
+    "moves_made": 21,
     "games_played": 3,
     "players": 3,
     "wins": 3,
@@ -24,6 +24,7 @@ lifetime_data = {
         "GHOST": 1,
         "WORST": 1,
         "FOIST": 1,
+        "BOOST": 1,
     },
     "wordle_words": ["EASEL", "LATHE", "FINCH"],
 }

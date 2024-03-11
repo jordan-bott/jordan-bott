@@ -30,11 +30,11 @@ player_data = {
         "guess_history": {"BLEAK": 1, "EASEL": 1},
     },
     "daisukev": {
-        "total_moves": 3,
+        "total_moves": 4,
         "total_winning_moves": 0,
         "total_invalid_guesses": 0,
         "first_move_made": "2024-03-11",
         "most_recent_move": "2024-03-11",
-        "guess_history": {"GHOST": 1, "WORST": 1, "FOIST": 1},
+        "guess_history": {"GHOST": 1, "WORST": 1, "FOIST": 1, "BOOST": 1},
     },
 }
