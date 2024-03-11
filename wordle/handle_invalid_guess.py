@@ -4,6 +4,8 @@ from game_data import game_data
 def handle_invalid_guess():
     print("Whoops that guess wasn't valid.")
 
+    letter_schema = "".join(game_data["letter_schema"])
+
     readme_content = f"""
 Hi! 👋🏼 I'm Jordan, welcome to my github!
 
@@ -19,12 +21,17 @@ Let's play wordle! Everyone is welcome to participate!
 
 Click "make a guess" below to contribute.
 
-The game is on guess # {game_data["turn_number"]}
+The game is on guess # {game_data["turn_number"]}<br />
 Whoops! The last guess made was **invalid**.
 
 [MAKE A GUESS](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
 
-{game_data["schema"]}
+| Current Game | Letters |
+| ------------ | ------- |
+| {game_data["schema"]} | {letter_schema} |
+
+Do you love stats? Check out these:
+[PLAYER STATS](./wordle/stat_sheets/PlayerData.md)   [GLOBAL STATS](./wordle/stat_sheets/GlobalData.md)
 
 """
 

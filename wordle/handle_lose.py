@@ -30,6 +30,9 @@ Click "start a new game" to try again!
 | ------------ | ------- |
 | {game_data["schema"]} | {letter_schema} |
 
+Do you love stats? Check out these:
+[PLAYER STATS](./wordle/stat_sheets/PlayerData.md)   [GLOBAL STATS](./wordle/stat_sheets/GlobalData.md)
+
 """
 
     file = open("README.md", "w")
