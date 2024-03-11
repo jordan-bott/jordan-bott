@@ -1,4 +1,4 @@
-clear_letter_schmea = [
+new_letter_schmea = [
     '<img src="./wordle/letters/white/Q.svg" width="20" />',
     '<img src="./wordle/letters/white/W.svg" width="20" />',
     '<img src="./wordle/letters/white/E.svg" width="20" />',
@@ -9,7 +9,7 @@ clear_letter_schmea = [
     '<img src="./wordle/letters/white/I.svg" width="20" />',
     '<img src="./wordle/letters/white/O.svg" width="20" />',
     '<img src="./wordle/letters/white/P.svg" width="20" />',
-    '<br />',
+    "<br />",
     '<img src="./wordle/letters/white/A.svg" width="20" />',
     '<img src="./wordle/letters/white/S.svg" width="20" />',
     '<img src="./wordle/letters/white/D.svg" width="20" />',
@@ -19,7 +19,7 @@ clear_letter_schmea = [
     '<img src="./wordle/letters/white/J.svg" width="20" />',
     '<img src="./wordle/letters/white/K.svg" width="20" />',
     '<img src="./wordle/letters/white/L.svg" width="20" />',
-    '<br />',
+    "<br />",
     '<img src="./wordle/letters/white/Z.svg" width="20" />',
     '<img src="./wordle/letters/white/X.svg" width="20" />',
     '<img src="./wordle/letters/white/C.svg" width="20" />',

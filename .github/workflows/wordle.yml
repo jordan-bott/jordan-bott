@@ -30,6 +30,8 @@ jobs:
       run: |
         python wordle/main.py
         echo 'the script ran'
+        black wordle/
+        echo 'black ran'
 
     - name: Commit Files
       id: commit

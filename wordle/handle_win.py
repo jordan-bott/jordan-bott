@@ -1,8 +1,13 @@
 from game_data import game_data
+from new_letter_schema import new_letter_schmea
+from new_game_data import new_game_data
 import json
 
 
 def handle_win(wordle_word):
+
+    letter_schema = "".join(new_letter_schmea)
+
     readme_content = f"""
 Hi! 👋🏼 I'm Jordan, welcome to my github!
 
@@ -22,7 +27,9 @@ Click "start a new game" to play again!
 
 [START A NEW GAME](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
 
-{game_data["schema"]}
+| Current Game | Letters |
+| ------------ | ------- |
+| {game_data["schema"]} | {letter_schema} |
 
 """
 
@@ -30,14 +37,4 @@ Click "start a new game" to play again!
     file.write(readme_content)
     file.close()
 
-    blank_game_data = {
-        "wordle_index": "",
-        "turn_number": 0,
-        "players": [],
-        "guessed_words": [],
-        "schema": "",
-
-    }
-    game_data_file = open("wordle/game_data.py", "w")
-    game_data_file.write(f"game_data = {json.dumps(blank_game_data)}")
-    game_data_file.close()
+    new_game_data()

@@ -2,7 +2,9 @@ from lifetime_data import lifetime_data
 import json
 
 
-def update_lifetime_data(is_new_player, is_game_over, is_win=False, is_lose=False, is_invalid=False):
+def update_lifetime_data(
+    is_new_player, is_game_over, is_win=False, is_lose=False, is_invalid=False
+):
     updated_lifetime_data = lifetime_data
 
     updated_lifetime_data["moves_made"] += 1
