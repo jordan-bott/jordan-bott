@@ -3,7 +3,13 @@ import json
 
 
 def update_lifetime_data(
-    is_new_player, is_game_over, guess, wordle_word, is_win=False, is_lose=False, is_invalid=False
+    is_new_player,
+    is_game_over,
+    guess,
+    wordle_word,
+    is_win=False,
+    is_lose=False,
+    is_invalid=False,
 ):
     updated_lifetime_data = lifetime_data
 

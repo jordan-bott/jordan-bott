@@ -9,7 +9,7 @@ def new_game_data():
         "guessed_words": [],
         "players": [],
         "schema": "",
-        "letter_schema": "".join(new_letter_schmea),
+        "letter_schema": new_letter_schmea,
     }
 
     game_data_file = open("wordle/game_data.py", "w")

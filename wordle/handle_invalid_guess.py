@@ -4,7 +4,6 @@ from game_data import game_data
 def handle_invalid_guess():
     print("Whoops that guess wasn't valid.")
 
-
     readme_content = f"""
 Hi! 👋🏼 I'm Jordan, welcome to my github!
 
