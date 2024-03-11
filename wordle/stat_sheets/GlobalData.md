@@ -1,9 +1,9 @@
 |              |                |
 | ---------------- | ----------------------------- |
-| Total Moves Made | 15 |
-| Total Games Played | 4 |
+| Total Moves Made | 16 |
+| Total Games Played | 5 |
 | Total Players Participated | 4 |
-| Total Wins | 3 |
+| Total Wins | 4 |
 | Total Losses | 0 |
 | Total Invalid Guesses | 1 |
-| Most Guessed Word | LATTE (1 times!) |
+| Most Guessed Word | LATHE (1 times!) |
