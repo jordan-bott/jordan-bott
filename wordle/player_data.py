@@ -29,4 +29,12 @@ player_data = {
         "most_recent_move": "2024-03-10",
         "guess_history": {"BLEAK": 1, "EASEL": 1},
     },
+    "daisukev": {
+        "total_moves": 1,
+        "total_winning_moves": 0,
+        "total_invalid_guesses": 0,
+        "first_move_made": "2024-03-11",
+        "most_recent_move": "2024-03-11",
+        "guess_history": {"GHOST": 1},
+    },
 }
