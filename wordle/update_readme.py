@@ -3,6 +3,8 @@ from game_data import game_data
 
 def update_readme():
 
+    letter_schema = str(game_data["letter_schema"])
+
     readme_content = f"""
 Hi! 👋🏼 I'm Jordan, welcome to my github!
 
@@ -22,7 +24,9 @@ The game is on guess # {game_data["turn_number"]}
 
 [MAKE A GUESS](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
 
-{game_data["schema"]}
+| Current Game | Letters |
+| ------------ | ------- |
+| {game_data["schema"]} | {letter_schema} |
 
 """
 

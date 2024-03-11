@@ -1,4 +1,33 @@
-game_data = {"wordle_index": 1519, "turn_number": 2, "players": ["jordan-bott", "IanKBovard"], "guessed_words": ["PLANT", "HOUSE"], "schema": "<img src=\"./wordle/tiles/grey/P.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/L.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/A.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/N.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/T.svg\" width=\"40\" /><br/><img src=\"./wordle/tiles/grey/H.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/O.svg\" width=\"40\" /><img src=\"./wordle/tiles/yellow/U.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/S.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/E.svg\" width=\"40\" /><br/>"}
+game_data = {"wordle_index": 1519, "turn_number": 2, "players": ["jordan-bott", "IanKBovard"], "guessed_words": ["PLANT", "HOUSE"], "schema": "<img src=\"./wordle/tiles/grey/P.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/L.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/A.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/N.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/T.svg\" width=\"40\" /><br/><img src=\"./wordle/tiles/grey/H.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/O.svg\" width=\"40\" /><img src=\"./wordle/tiles/yellow/U.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/S.svg\" width=\"40\" /><img src=\"./wordle/tiles/grey/E.svg\" width=\"40\" /><br/>", "letter_schema": [
+    '<img src="./wordle/letters/white/Q.svg" width="20" />',
+    '<img src="./wordle/letters/white/W.svg" width="20" />',
+    '<img src="./wordle/letters/grey/E.svg" width="20" />',
+    '<img src="./wordle/letters/white/R.svg" width="20" />',
+    '<img src="./wordle/letters/grey/T.svg" width="20" />',
+    '<img src="./wordle/letters/white/Y.svg" width="20" />',
+    '<img src="./wordle/letters/yellow/U.svg" width="20" />',
+    '<img src="./wordle/letters/white/I.svg" width="20" />',
+    '<img src="./wordle/letters/grey/O.svg" width="20" />',
+    '<img src="./wordle/letters/grey/P.svg" width="20" />',
+    '<br />',
+    '<img src="./wordle/letters/grey/A.svg" width="20" />',
+    '<img src="./wordle/letters/grey/S.svg" width="20" />',
+    '<img src="./wordle/letters/white/D.svg" width="20" />',
+    '<img src="./wordle/letters/white/F.svg" width="20" />',
+    '<img src="./wordle/letters/white/G.svg" width="20" />',
+    '<img src="./wordle/letters/grey/H.svg" width="20" />',
+    '<img src="./wordle/letters/white/J.svg" width="20" />',
+    '<img src="./wordle/letters/white/K.svg" width="20" />',
+    '<img src="./wordle/letters/grey/L.svg" width="20" />',
+    '<br />',
+    '<img src="./wordle/letters/white/Z.svg" width="20" />',
+    '<img src="./wordle/letters/white/X.svg" width="20" />',
+    '<img src="./wordle/letters/white/C.svg" width="20" />',
+    '<img src="./wordle/letters/white/V.svg" width="20" />',
+    '<img src="./wordle/letters/white/B.svg" width="20" />',
+    '<img src="./wordle/letters/grey/N.svg" width="20" />',
+    '<img src="./wordle/letters/white/M.svg" width="20" />',
+]}
 
 # add letter_schema - store as a list. Index the list for each letter that in changed, using a dictionary to hold what index coresponds to each letter
 # include the breaks in the list at the end of the keyboard rows
