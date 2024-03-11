@@ -59,7 +59,7 @@ def main():
     # check if win & update player meta data
     if wordle_word == guess:
         is_new_player = update_player_data(user, guess, True)
-        update_lifetime_data(is_new_player, guess, wordle_word True, is_win=True)
+        update_lifetime_data(is_new_player, guess, wordle_word, True, is_win=True)
         return handle_win(wordle_word)
 
     # check if lose & update player meta data
