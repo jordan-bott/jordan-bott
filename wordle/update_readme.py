@@ -24,7 +24,7 @@ Click "make a guess" below to contribute.
 
 [MAKE A GUESS](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
 
-Most Recent Player: {user}
+Most Recent Player: [{user}](https://github.com/{user})
 
 | Current Game | Letters |
 | ------------ | ------- |
