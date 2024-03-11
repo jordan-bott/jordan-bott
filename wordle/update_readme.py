@@ -28,6 +28,9 @@ The game is on guess # {game_data["turn_number"]}
 | ------------ | ------- |
 | {game_data["schema"]} | {letter_schema} |
 
+Do you love stats? Check out these below:
+[PLAYER STATS](./wordle/stat_sheets/PlayerData.md)   [GLOBAL STATS](./wordle/stat_sheets/GlobalData.md)
+
 """
 
     file = open("README.md", "w")
