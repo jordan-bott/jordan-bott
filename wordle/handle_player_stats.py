@@ -1,6 +1,7 @@
 from player_data import player_data
 from datetime import date
 
+
 def handle_player_stats():
     table_content = """
 | Player Name | Total Moves | Total Winning Moves | Total Invalid Guesses | First Move Made | Most Recent Move | Guess History |

@@ -5,7 +5,7 @@ import json
 
 def handle_lose(wordle_word):
 
-    letter_schema = ''.join(game_data["letter_schema"])
+    letter_schema = "".join(game_data["letter_schema"])
 
     readme_content = f"""
 Hi! 👋🏼 I'm Jordan, welcome to my github!
