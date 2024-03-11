@@ -30,8 +30,6 @@ def main():
     issue_title = os.environ.get("ISSUE_TITLE")
     guess = issue_title[13:18].upper()
 
-    print("guess:", guess)
-
     # pull user from issue meta data
     user = os.environ.get("ISSUE_USER")
     if user not in updated_game_data["players"]:
