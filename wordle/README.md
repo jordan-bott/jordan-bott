@@ -48,7 +48,7 @@ The next step is `Handle Move`. This is where all of the game logic and all edit
 
 Next, it will automatically create a commit for the changes made by `main.py` (step: `Commit Files`) and push those changes to the repo (step: `Push Changes`). This is important because `main.py` is editing several files and we want to see those changes automatically show up on the profile page without any more user input.
 
-Finally, the `Close Issue` step will close the issue that was opened and triggered this workflow. This is done by using the GitHub CLI and running `gh issue close ${{github.event.issue.number}}` (line 59). While not a necessary step, this is a nice housekeeping step as the issues are used to trigger the workflow, and pass in the guess, but are not needed after the workflow has been ran.
+Finally, the `Close Issue` step will close the issue that was opened and triggered this workflow. This is done by using the GitHub CLI and running `gh issue close ${{github.event.issue.number}}` (line 59). While not a necessary step, this is a nice housekeeping step as the issues are used to trigger the workflow, and pass in the guess, but are not needed after the workflow has been ran. Information about the GitHub CLI can be found [here](https://cli.github.com/manual/gh_issue_close)
 
 ### Python Code (Game Logic)
 
@@ -73,77 +73,125 @@ As I mentioned, this is control center of the whole process. `main.py` is trigge
 
 While `main.py` is one file (one function), I have broken it up into different sections:
 
-##### Check if there is a wordle index
+**-> Check if there is a wordle index**
 
 First we will check if there is a `wordle_index` stored in the `game_data.py` file. This `wordle_index` is how I keep track of if we are in a current game, or need to start a new game. If this is blank, we should start a new game by assigning a random integer between 0 and 2314 to `wordle_index`. When a game is won or lost, the `wordle_index` will be reset to an empty string.
 
-##### Pull Wordle Word Based on Wordle Index
+**-> Pull Wordle Word Based on Wordle Index**
 
 Now that there is a `wordle_index` assigned in the game data, we will use that to grab the wordle word. I opted to store an index rather than the word itself to make it more difficult to search for the answer in the source code as a player. `possible_words.py` holds a function that returns a list of all possible words, and this is indexed at `wordle_index` to grab the current game's word.
 
-##### Pull Guess From Issue Meta Data
+**-> Pull Guess From Issue Meta Data**
 
 This is where the GitHub issue comes into play. The GitHub issue serves two purposes: triggering the GitHub Workflow and providing the guess to the game. This is where we pull the guess from the title of the issue. In the [issue template](https://github.com/jordan-bott/jordan-bott/blob/main/.github/ISSUE_TEMPLATE/wordle_guess.md) there are instructions on exactly how to insert the guess so that the code correctly parses through it.
 
 This information is pulled directly from the title of the issue and stored in an environment variable in the GitHub Workflow. Then in `main.py` it is stored in a variable to be used throughout the rest of the file.
 
-##### Pull User From Issue Meta Data
+**-> Pull User From Issue Meta Data**
 
 This works identically to the above, and pulls the username of the user who submitted the issue and stores it as the `user` in `main.py`.  This is used to track player stats, and **only the username** of the user is stored (and of course their stats like how many games they've won, and how many guesses they've made!). The current game's data also stores a list of participating players, and that information is updated in this step as well.
 
-##### Check If Guess is Valid
+**-> Check If Guess is Valid**
 
 This step uses the [`check_word_validity`](#check_word_validitypy) function to determine if a guess is valid. If it is, it will update the game's data with the guess and continue through the next steps of `main.py`.
 
 If the guess is not valid, player data is updated (using [`update_player_data`](#update_player_datapy)), lifetime stats are updated (using [`update_lifetime_data`](#update_lifetime_datapy)), and we return [`handle_invalid_guess`](#handle_invalid_guesspy), which updates the Readme with the information that the most recent guess was invalid. If this is triggered, the python code ends here, and the GitHub Workflow will continue through to commiting and pushing the code, closing the issue, and updating wakatime.
 
-##### Create Schemas
+**-> Create Schemas**
 
+This step uses [`create_schema`](#create_schemapy) to create both the past guess schema (this one: 🟩🟩⬛️🟨🟩), and what I've called the "letter schema" which is the letters to the side of the game, organized in a QWERTY keyboard layout to better visualize which letters have been used/unused. The [`create_schema`](#create_schemapy) function returns a list of these two schemas and they are stored into the current game's information.
 
+**-> Update game_data**
 
-##### Update game_data
+Throughout `main.py` we have been updating game information. This has been stored in the `updated_game_data` variable, so that we only have to write to the `game_data.py` file once. At this point, we update the turn number, and can update [`game_data.py`](#game_datapy). We do this by using python's built in `open()` function, which allows us to open a file in our file tree, and then read, append or write to it. In this case, we will be writing to it, which will replace all exisiting information with our new game data. `open()` can only write strings, so we pass the game data in as json using `json.dumps`, however, the `game_data.py` file will interpret this as python once it's written.
 
-##### Check if Win & Update Player Meta Data
+**-> Check if Win & Update Player Meta Data**
 
-##### Check if Lose & Update Player Meta Data
+Finally, after checking if the guess is valid, updating all kinds of data, and working through most of `main.py` we can check to see if we've won! This is a very simple conditional checking `if wordle_word == guess`. If this is true, we do a few things. First, we update the player data for the user who triggered the issue using [`update_player_data`](#update_player_datapy). Then we will update the lifetime data using [`update_lifetime_data`](#update_lifetime_datapy). Player data and lifetime data are used to create the stats pages ([player stats](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/stat_sheets/PlayerData.md) [global stats](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/stat_sheets/GlobalData.md)), this is done using [`handle_player_stats`](#handle_player_statspy) and [`handle_global_stats`](#handle_global_statspy) respectively.
 
-##### Update Player Meta Data
+Then a special rendering of the readme is produced by [`handle_win`](#handle_winpy) to show the winning game, and prompt users for a new game. This exits `main.py` and the GitHub workflow will continue onto it's next step.
 
-##### Update Readme
+**-> Check if Lose & Update Player Meta Data**
+
+If we didn't win, perhaps we lost. So we will check that here. We do this by checking if the turn number stored in our game data is exactly equal to 6. If it is, we have taken the allotted amount of turns, and we lost. The process for a loss is similar to a win: we update the player data for the user who triggered the issue using [`update_player_data`](#update_player_datapy) and update the lifetime data using [`update_lifetime_data`](#update_lifetime_datapy).
+
+Then a special rendering of the readme is produced by [`handle_lose`](#handle_losepy) to show the losing game and prompt users to start a new game. This exits `main.py` and the GitHub workflow will continue onto it's next step.
+
+**-> Update Player Meta Data**
+
+If we neither won nor loss, than the game continues! We will update the player data for the user who triggered the issue using [`update_player_data`](#update_player_datapy) and update the lifetime data using [`update_lifetime_data`](#update_lifetime_datapy) with information about the turn.
+
+**-> Update Readme**
+
+Finally, we will update the readme with the most recent guess using [`update_readme`](#update_readmepy), finishing the `main.py` process! The GitHub workflow will continue onto it's next step.
 
 #### `check_word_validity.py`
 
+*coming soon!*
+
 #### `create_schema.py`
+
+*coming soon!*
 
 #### `game_data.py`
 
+*coming soon!*
+
 #### `handle_global_stats.py`
+
+*coming soon!*
 
 #### `handle_invalid_guess.py`
 
+*coming soon!*
+
 #### `handle_lose.py`
+
+*coming soon!*
 
 #### `handle_player_stats.py`
 
+*coming soon!*
+
 #### `handle_win.py`
+
+*coming soon!*
 
 #### `letter_indicies.py`
 
+*coming soon!*
+
 #### `lifetime_data.py`
+
+*coming soon!*
 
 #### `new_game_data.py`
 
+*coming soon!*
+
 #### `new_letter_schema.py`
+
+*coming soon!*
 
 #### `player_data.py`
 
+*coming soon!*
+
 #### `possible_words.py`
+
+*coming soon!*
 
 #### `update_lifetime_data.py`
 
+*coming soon!*
+
 #### `update_player_data.py`
 
+*coming soon!*
+
 #### `update_readme.py`
+
+*coming soon!*
 
 ## Future of Project
 

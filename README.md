@@ -24,7 +24,7 @@ Text         5 mins          ▒░░░░░░░░░░░░░░░░
 
 # Let's Play Wordle!
 
-Everyone is welcome to participate! This is an **asynchronous**, and **collaborative** version of wordle, where players make one move at a time. Please make as many or as few moves as you would like!
+Everyone is welcome to participate! This is an **asynchronous** and **collaborative** version of wordle, where players make one move at a time. Please make as many or as few moves as you would like!
 
 Click "make a guess" below to contribute.
 
@@ -38,4 +38,3 @@ Most Recent Player: [KamronP23](https://github.com/KamronP23)
 
 Do you love stats? Check out these:
 [PLAYER STATS](./wordle/stat_sheets/PlayerData.md)   [GLOBAL STATS](./wordle/stat_sheets/GlobalData.md)
-
