@@ -10,7 +10,8 @@ def handle_global_stats():
             most_guessed = guess
             most_guess_num = lifetime_data["words_guessed"][guess]
 
-    content = f"""
+    content = f"""|              |                |
+| ---------------- | ----------------------------- |
 | Total Moves Made | {lifetime_data["moves_made"]} |
 | Total Games Played | {lifetime_data["games_played"]} |
 | Total Players Participated | {lifetime_data["players"]} |
