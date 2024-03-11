@@ -4,6 +4,7 @@ from check_word_validity import check_word_validity
 from handle_invalid_guess import handle_invalid_guess
 from create_schema import create_schema
 from update_player_data import update_player_data
+from update_lifetime_data import update_lifetime_data
 from handle_win import handle_win
 from handle_lose import handle_lose
 from update_readme import update_readme
@@ -30,7 +31,6 @@ def main():
     guess = issue_title[13:18].upper()
 
     print("guess:", guess)
-    print("game data:", updated_game_data)
 
     # check if guess is valid
     is_valid = check_word_validity(guess, updated_game_data["guessed_words"])
@@ -58,16 +58,19 @@ def main():
 
     # check if win & update player meta data
     if wordle_word == guess:
-        update_player_data(user, guess, True)
+        is_new_player = update_player_data(user, guess, True)
+        update_lifetime_data(is_new_player, True, win=True)
         return handle_win(wordle_word)
 
     # check if lose & update player meta data
     if updated_game_data["turn_number"] == 6:
-        update_player_data(user, guess, False)
+        is_new_player = update_player_data(user, guess, False)
+        update_lifetime_data(is_new_player, True, lose=True)
         return handle_lose(wordle_word)
 
     # update player meta data
-    update_player_data(user, guess, False)
+    is_new_player = update_player_data(user, guess, False)
+    update_lifetime_data(is_new_player, False)
 
     # update readme
     update_readme()
