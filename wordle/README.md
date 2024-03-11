@@ -1,8 +1,8 @@
 # Asynchronous/Collaborative Wordle on Github!
 
-Welcome to the ReadMe! If you have any questions about anything in here, please feel free to reach out [jordanbott.dev@gmail.com](jordanbott.dev@gmail.com)
+Welcome to the ReadMe! If you have any questions about anything in here, please feel free to reach out - [jordanbott.dev@gmail.com](jordanbott.dev@gmail.com)
 
-If you've played, you've probably noticed that my version of wordle doesn't play quite like the [NYT version](https://www.nytimes.com/games/wordle/index.html) does. Rather than everyone in the world playing their own game with the same word, everyone plays in one game instance, one move at a time. Players are welcomed to make multiple moves in a row, or play one move and wait for the community to continue the game. Player and global stats are tracked, and can be found by looking at the [PLAYER STATS](./wordle/stat_sheets/PlayerData.md) and the [GLOBAL STATS](./wordle/stat_sheets/GlobalData.md). Only the player's github username is stored with their play stats.
+If you've played, you've probably noticed that my version of wordle doesn't play quite like the [NYT version](https://www.nytimes.com/games/wordle/index.html) does. Rather than everyone in the world playing their own game with the same word, everyone plays in the same game, and plays one move at a time. Players are welcomed to make multiple moves in a row, or play one move and wait for the community to continue the game. Unlike the NTY wordle, every time a game completes, a new word is ready! Player and global stats are tracked, and can be found by looking at the [PLAYER STATS](./wordle/stat_sheets/PlayerData.md) and the [GLOBAL STATS](./wordle/stat_sheets/GlobalData.md). Only the player's github username is stored with their play stats.
 
 ## Overview
 
