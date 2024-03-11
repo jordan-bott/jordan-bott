@@ -1,8 +1,8 @@
 |              |                |
 | ---------------- | ----------------------------- |
-| Total Moves Made | 21 |
+| Total Moves Made | 22 |
 | Total Games Played | 3 |
-| Total Players Participated | 3 |
+| Total Players Participated | 4 |
 | Total Wins | 3 |
 | Total Losses | 0 |
 | Total Invalid Guesses | 0 |

@@ -7,30 +7,17 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 
 
 <!--START_SECTION:waka-->
-
-```txt
-From: 04 March 2024 - To: 11 March 2024
-
-Total Time: 11 hrs 56 mins
-
-Python       9 hrs 18 mins   ███████████████████▒░░░░░   77.84 %
-Markdown     1 hr 5 mins     ██▒░░░░░░░░░░░░░░░░░░░░░░   09.07 %
-YAML         56 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.84 %
-XML          19 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.67 %
-Text         5 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.81 %
-```
-
 <!--END_SECTION:waka-->
 
-# Let's Play Wordle!
-
-Everyone is welcome to participate! This is an **asynchronous**, and **collaborative** version of wordle, where players make one move at a time. Please make as many or as few moves as you would like!
+Let's play wordle! Everyone is welcome to participate!
 
 Click "make a guess" below to contribute.
 
+Whoops! The last guess made was **invalid**.
+
 [MAKE A GUESS](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
 
-Most Recent Player: [daisukev](https://github.com/daisukev)
+Most Recent Player: [7ingyu](https://github.com/7ingyu)
 
 | Current Game | Letters |
 | ------------ | ------- |
