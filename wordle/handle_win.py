@@ -5,6 +5,8 @@ import json
 
 def handle_win(wordle_word):
 
+    letter_schema = ''.join(game_data["letter_schema"])
+
     readme_content = f"""
 Hi! 👋🏼 I'm Jordan, welcome to my github!
 
@@ -26,7 +28,7 @@ Click "start a new game" to play again!
 
 | Current Game | Letters |
 | ------------ | ------- |
-| {game_data["schema"]} | {game_data["letter_schema"]} |
+| {game_data["schema"]} | {letter_schema} |
 
 """
 
