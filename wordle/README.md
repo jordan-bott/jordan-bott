@@ -46,6 +46,7 @@ In this section I will share any future feature ideas that I have, as well as an
 - Adjusting letter section to be styled more like a keyboard
 - Adding shield.io images for stats
 - Auto show game schema and letters in the issue template
+- Further error handling to update the ReadMe should something bad happen in the workflow
 
 ### Bugs to Fix
 
