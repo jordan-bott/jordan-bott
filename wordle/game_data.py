@@ -1,9 +1,9 @@
 game_data = {
     "wordle_index": 630,
-    "turn_number": 3,
-    "guessed_words": ["ADIEU", "LASER", "WATER"],
+    "turn_number": 4,
+    "guessed_words": ["ADIEU", "LASER", "WATER", "CATER"],
     "players": ["emilyvictany"],
-    "schema": '<img src="./wordle/tiles/yellow/A.svg" width="40" /><img src="./wordle/tiles/grey/D.svg" width="40" /><img src="./wordle/tiles/grey/I.svg" width="40" /><img src="./wordle/tiles/green/E.svg" width="40" /><img src="./wordle/tiles/grey/U.svg" width="40" /><br/><img src="./wordle/tiles/grey/L.svg" width="40" /><img src="./wordle/tiles/green/A.svg" width="40" /><img src="./wordle/tiles/grey/S.svg" width="40" /><img src="./wordle/tiles/green/E.svg" width="40" /><img src="./wordle/tiles/green/R.svg" width="40" /><br/><img src="./wordle/tiles/grey/W.svg" width="40" /><img src="./wordle/tiles/green/A.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><img src="./wordle/tiles/green/E.svg" width="40" /><img src="./wordle/tiles/green/R.svg" width="40" /><br/>',
+    "schema": '<img src="./wordle/tiles/yellow/A.svg" width="40" /><img src="./wordle/tiles/grey/D.svg" width="40" /><img src="./wordle/tiles/grey/I.svg" width="40" /><img src="./wordle/tiles/green/E.svg" width="40" /><img src="./wordle/tiles/grey/U.svg" width="40" /><br/><img src="./wordle/tiles/grey/L.svg" width="40" /><img src="./wordle/tiles/green/A.svg" width="40" /><img src="./wordle/tiles/grey/S.svg" width="40" /><img src="./wordle/tiles/green/E.svg" width="40" /><img src="./wordle/tiles/green/R.svg" width="40" /><br/><img src="./wordle/tiles/grey/W.svg" width="40" /><img src="./wordle/tiles/green/A.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><img src="./wordle/tiles/green/E.svg" width="40" /><img src="./wordle/tiles/green/R.svg" width="40" /><br/><img src="./wordle/tiles/grey/C.svg" width="40" /><img src="./wordle/tiles/green/A.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><img src="./wordle/tiles/green/E.svg" width="40" /><img src="./wordle/tiles/green/R.svg" width="40" /><br/>',
     "letter_schema": [
         '<img src="./wordle/letters/white/Q.svg" width="20" />',
         '<img src="./wordle/letters/grey/W.svg" width="20" />',
@@ -28,7 +28,7 @@ game_data = {
         "<br />",
         '<img src="./wordle/letters/white/Z.svg" width="20" />',
         '<img src="./wordle/letters/white/X.svg" width="20" />',
-        '<img src="./wordle/letters/white/C.svg" width="20" />',
+        '<img src="./wordle/letters/grey/C.svg" width="20" />',
         '<img src="./wordle/letters/white/V.svg" width="20" />',
         '<img src="./wordle/letters/white/B.svg" width="20" />',
         '<img src="./wordle/letters/white/N.svg" width="20" />',
