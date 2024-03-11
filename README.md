@@ -7,34 +7,21 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 
 
 <!--START_SECTION:waka-->
-
-```txt
-From: 04 March 2024 - To: 11 March 2024
-
-Total Time: 11 hrs 56 mins
-
-Python       9 hrs 18 mins   ███████████████████▒░░░░░   77.84 %
-Markdown     1 hr 5 mins     ██▒░░░░░░░░░░░░░░░░░░░░░░   09.07 %
-YAML         56 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.84 %
-XML          19 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.67 %
-Text         5 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.81 %
-```
-
 <!--END_SECTION:waka-->
 
 Let's play wordle! Everyone is welcome to participate!
 
-Click "make a guess" below to contribute.
+We won! 🎉 The word was: JOUST
 
-Whoops! The last guess made was **invalid**.
+Click "start a new game" to play again!
 
-[MAKE A GUESS](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
+[START A NEW GAME](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
 
-Most Recent Player: [7ingyu](https://github.com/7ingyu)
+Most Recent Player: [daisukev](https://github.com/daisukev)
 
 | Current Game | Letters |
 | ------------ | ------- |
-| <img src="./wordle/tiles/grey/P.svg" width="40" /><img src="./wordle/tiles/grey/L.svg" width="40" /><img src="./wordle/tiles/grey/A.svg" width="40" /><img src="./wordle/tiles/grey/N.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><br/><img src="./wordle/tiles/grey/G.svg" width="40" /><img src="./wordle/tiles/grey/H.svg" width="40" /><img src="./wordle/tiles/yellow/O.svg" width="40" /><img src="./wordle/tiles/green/S.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><br/><img src="./wordle/tiles/grey/W.svg" width="40" /><img src="./wordle/tiles/green/O.svg" width="40" /><img src="./wordle/tiles/grey/R.svg" width="40" /><img src="./wordle/tiles/green/S.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><br/><img src="./wordle/tiles/grey/F.svg" width="40" /><img src="./wordle/tiles/green/O.svg" width="40" /><img src="./wordle/tiles/grey/I.svg" width="40" /><img src="./wordle/tiles/green/S.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><br/><img src="./wordle/tiles/grey/B.svg" width="40" /><img src="./wordle/tiles/green/O.svg" width="40" /><img src="./wordle/tiles/yellow/O.svg" width="40" /><img src="./wordle/tiles/green/S.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><br/> | <img src="./wordle/letters/white/Q.svg" width="20" /><img src="./wordle/letters/grey/W.svg" width="20" /><img src="./wordle/letters/white/E.svg" width="20" /><img src="./wordle/letters/grey/R.svg" width="20" /><img src="./wordle/letters/green/T.svg" width="20" /><img src="./wordle/letters/white/Y.svg" width="20" /><img src="./wordle/letters/white/U.svg" width="20" /><img src="./wordle/letters/grey/I.svg" width="20" /><img src="./wordle/letters/yellow/O.svg" width="20" /><img src="./wordle/letters/grey/P.svg" width="20" /><br /><img src="./wordle/letters/grey/A.svg" width="20" /><img src="./wordle/letters/green/S.svg" width="20" /><img src="./wordle/letters/white/D.svg" width="20" /><img src="./wordle/letters/grey/F.svg" width="20" /><img src="./wordle/letters/grey/G.svg" width="20" /><img src="./wordle/letters/grey/H.svg" width="20" /><img src="./wordle/letters/white/J.svg" width="20" /><img src="./wordle/letters/white/K.svg" width="20" /><img src="./wordle/letters/grey/L.svg" width="20" /><br /><img src="./wordle/letters/white/Z.svg" width="20" /><img src="./wordle/letters/white/X.svg" width="20" /><img src="./wordle/letters/white/C.svg" width="20" /><img src="./wordle/letters/white/V.svg" width="20" /><img src="./wordle/letters/grey/B.svg" width="20" /><img src="./wordle/letters/grey/N.svg" width="20" /><img src="./wordle/letters/white/M.svg" width="20" /> |
+| <img src="./wordle/tiles/grey/P.svg" width="40" /><img src="./wordle/tiles/grey/L.svg" width="40" /><img src="./wordle/tiles/grey/A.svg" width="40" /><img src="./wordle/tiles/grey/N.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><br/><img src="./wordle/tiles/grey/G.svg" width="40" /><img src="./wordle/tiles/grey/H.svg" width="40" /><img src="./wordle/tiles/yellow/O.svg" width="40" /><img src="./wordle/tiles/green/S.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><br/><img src="./wordle/tiles/grey/W.svg" width="40" /><img src="./wordle/tiles/green/O.svg" width="40" /><img src="./wordle/tiles/grey/R.svg" width="40" /><img src="./wordle/tiles/green/S.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><br/><img src="./wordle/tiles/grey/F.svg" width="40" /><img src="./wordle/tiles/green/O.svg" width="40" /><img src="./wordle/tiles/grey/I.svg" width="40" /><img src="./wordle/tiles/green/S.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><br/><img src="./wordle/tiles/grey/B.svg" width="40" /><img src="./wordle/tiles/green/O.svg" width="40" /><img src="./wordle/tiles/yellow/O.svg" width="40" /><img src="./wordle/tiles/green/S.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><br/><img src="./wordle/tiles/green/J.svg" width="40" /><img src="./wordle/tiles/green/O.svg" width="40" /><img src="./wordle/tiles/green/U.svg" width="40" /><img src="./wordle/tiles/green/S.svg" width="40" /><img src="./wordle/tiles/green/T.svg" width="40" /><br/> | <img src="./wordle/letters/white/Q.svg" width="20" /><img src="./wordle/letters/grey/W.svg" width="20" /><img src="./wordle/letters/white/E.svg" width="20" /><img src="./wordle/letters/grey/R.svg" width="20" /><img src="./wordle/letters/green/T.svg" width="20" /><img src="./wordle/letters/white/Y.svg" width="20" /><img src="./wordle/letters/green/U.svg" width="20" /><img src="./wordle/letters/grey/I.svg" width="20" /><img src="./wordle/letters/green/O.svg" width="20" /><img src="./wordle/letters/grey/P.svg" width="20" /><br /><img src="./wordle/letters/grey/A.svg" width="20" /><img src="./wordle/letters/green/S.svg" width="20" /><img src="./wordle/letters/white/D.svg" width="20" /><img src="./wordle/letters/grey/F.svg" width="20" /><img src="./wordle/letters/grey/G.svg" width="20" /><img src="./wordle/letters/grey/H.svg" width="20" /><img src="./wordle/letters/green/J.svg" width="20" /><img src="./wordle/letters/white/K.svg" width="20" /><img src="./wordle/letters/grey/L.svg" width="20" /><br /><img src="./wordle/letters/white/Z.svg" width="20" /><img src="./wordle/letters/white/X.svg" width="20" /><img src="./wordle/letters/white/C.svg" width="20" /><img src="./wordle/letters/white/V.svg" width="20" /><img src="./wordle/letters/grey/B.svg" width="20" /><img src="./wordle/letters/grey/N.svg" width="20" /><img src="./wordle/letters/white/M.svg" width="20" /> |
 
 Do you love stats? Check out these:
 [PLAYER STATS](./wordle/stat_sheets/PlayerData.md)   [GLOBAL STATS](./wordle/stat_sheets/GlobalData.md)
