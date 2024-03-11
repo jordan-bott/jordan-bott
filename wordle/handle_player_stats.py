@@ -4,7 +4,7 @@ from datetime import date
 
 def handle_player_stats():
     table_content = """
-| Player Name | Total Moves | Total Winning Moves | Total Invalid Guesses | First Move Made | Most Recent Move | Guess History |
+| Player Name | Total Moves | Total Winning Moves | Total Invalid Guesses | First Move Made | Most Recent Move | Most Guessed Word |
 | ----------- | ----------- | ------------------- | --------------------- | --------------- | ---------------- | ------------- |"""
     for item in player_data:
         first_move = date.fromisoformat(player_data[item]["first_move_made"])
