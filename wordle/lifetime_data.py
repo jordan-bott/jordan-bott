@@ -4,7 +4,7 @@ lifetime_data = {
     "players": 5,
     "wins": 4,
     "loses": 1,
-    "invalid_guesses": 0,
+    "invalid_guesses": 1,
     "words_guessed": {
         "UNDER": 1,
         "QUEER": 1,
