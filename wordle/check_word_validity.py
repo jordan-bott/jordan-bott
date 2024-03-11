@@ -11,7 +11,11 @@ def check_word_validity(word, guessed_words):
     dict_response = requests.get(
         f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
     )
-    dict_json = dict_response.json()
+    if dict_response is not None:
+        dict_json = dict_response.json()
+    else:
+        print("Bad API response")
+        return False
     if not isinstance(dict_json, list):
         print("Whoops, that word isn't in the dictionary.")
         return False
