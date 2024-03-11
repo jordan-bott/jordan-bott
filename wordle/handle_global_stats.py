@@ -8,7 +8,7 @@ def handle_global_stats():
     for guess in lifetime_data["words_guessed"]:
         if lifetime_data["words_guessed"][guess] >= most_guess_num:
             most_guessed = guess
-            most_guess_num = lifetime_data["words_guessed"]
+            most_guess_num = lifetime_data["words_guessed"][guess]
 
     content = f"""
 | Total Moves Made | {lifetime_data["moves_made"]} |
