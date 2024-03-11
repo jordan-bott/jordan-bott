@@ -1,11 +1,15 @@
 lifetime_data = {
-    "moves_made": 16,
-    "games_played": 5,
-    "players": 4,
-    "wins": 4,
+    "moves_made": 12,
+    "games_played": 2,
+    "players": 2,
+    "wins": 2,
     "loses": 0,
-    "invalid_guesses": 1,
+    "invalid_guesses": 0,
     "words_guessed": {
+        "UNDER": 1,
+        "QUEER": 1,
+        "QUITE": 1,
+        "QUICK": 1,
         "CRANE": 1,
         "FEARS": 1,
         "BLEAK": 1,
@@ -15,5 +19,5 @@ lifetime_data = {
         "LATTE": 1,
         "LATHE": 1,
     },
-    "wordle_words": [true],
+    "wordle_words": ["EASEL", "LATHE"],
 }
