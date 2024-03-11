@@ -45,6 +45,7 @@ In this section I will share any future feature ideas that I have, as well as an
 - Further stat tracking
 - Adjusting letter section to be styled more like a keyboard
 - Adding shield.io images for stats
+- Auto show game schema and letters in the issue template
 
 ### Bugs to Fix
 
