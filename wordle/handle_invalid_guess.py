@@ -22,7 +22,7 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 
  ![Static Badge](https://img.shields.io/badge/Total%20Players-{lifetime_data["players"]}-mediumpurple?style=flat&labelColor=lavender)  ![Static Badge](https://img.shields.io/badge/Total%20Wins-{lifetime_data["wins"]}-darkseagreen?style=flat&labelColor=ecfbe3) ![Static Badge](https://img.shields.io/badge/Total%20Games-{lifetime_data["games_played"]}-khaki?style=flat&labelColor=lightyellow) ![Static Badge](https://img.shields.io/badge/Total%20Moves-{lifetime_data["moves_made"]}-pink?style=flat&labelColor=lavenderblush)
 
-Everyone is welcome to participate! This is an **asynchronous**, and **collaborative** version of wordle, where players make one move at a time. Please make as many or as few moves as you would like!
+> Everyone is welcome to participate! This is an **asynchronous**, and **collaborative** version of wordle, where players make one move at a time. Please make as many or as few moves as you would like!
 
 Click "make a guess" below to contribute. ⬇️
 
