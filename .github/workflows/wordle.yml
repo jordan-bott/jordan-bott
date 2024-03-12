@@ -26,7 +26,7 @@ jobs:
       env:
         ISSUE_TITLE: ${{ github.event.issue.title }}
         ISSUE_USER: ${{ github.event.issue.user.login }}
-        DISALLOWED_WORDS: ${{ secrets.DISALLOWED_WORDS }}
+        DISALLOWED_WORDS: ${{ vars.DISALLOWED_WORDS }}
       run: |
         python wordle/main.py
         echo 'the script ran'
