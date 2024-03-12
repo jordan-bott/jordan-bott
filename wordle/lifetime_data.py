@@ -1,7 +1,7 @@
 lifetime_data = {
-    "moves_made": 33,
+    "moves_made": 34,
     "games_played": 6,
-    "players": 6,
+    "players": 7,
     "wins": 5,
     "loses": 1,
     "invalid_guesses": 1,
@@ -37,6 +37,7 @@ lifetime_data = {
         "SPOOL": 1,
         "PENIS": 1,
         "SCOWL": 1,
+        "TRACK": 1,
     },
     "wordle_words": ["EASEL", "LATHE", "FINCH", "JOUST", "EATER", "SCOWL"],
 }
