@@ -9,7 +9,9 @@ def check_word_validity(word, guessed_words):
     if word in guessed_words:
         print("You've already guessed that one!")
         return False
-    print(list(os.environ.get("DISALLOWED_WORDS")))
+    disallowed_words = os.environ.get("DISALLOWED_WORDS")
+    print(disallowed_words)
+    print(type(disallowed_words))
     if word in os.environ.get("DISALLOWED_WORDS"):
         print(
             "Hmm that word isn't allowed. Please be respectful/appropriate with your guess."
