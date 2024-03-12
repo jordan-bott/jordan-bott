@@ -17,7 +17,7 @@ def update_player_data(player, guess, is_win, is_valid=True):
             else:
                 updated_player_data[player]["guess_history"][guess] = 1
         else:
-            update_player_data[player]["total_invalid_guesses"] += 1
+            updated_player_data[player]["total_invalid_guesses"] += 1
     else:
         new_player = True
         updated_player_data[player] = {
