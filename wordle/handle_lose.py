@@ -41,7 +41,7 @@ We lost this one 🥲. The word was: {wordle_word}
 
 Click "start a new game" to try again! ⬇️
 
-![Static Badge](https://img.shields.io/badge/START%20A%20NEW%20GAME-mediumpurple?style=flat&link=https%3A%2F%2Fgithub.com%2Fjordan-bott%2Fjordan-bott%2Fissues%2Fnew%3Fassignees%3D%26labels%3D%26projects%3D%26template%3Dwordle_guess.md%26title%3Dwordleguess%257C%255BPUT%2B5%2BLETTER%2BWORD%2BHERE%255D)
+[![Static Badge](https://img.shields.io/badge/START%20A%20NEW%20GAME-mediumpurple?style=flat)](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
 
 🧑‍💻 Most Recent Player:  &ensp; [![static badge](https://img.shields.io/badge/{shield_user}-burlywood?logo=github)](https://github.come/{user})
 
