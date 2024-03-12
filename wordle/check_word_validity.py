@@ -11,7 +11,7 @@ def check_word_validity(word, guessed_words):
         print("You've already guessed that one!")
         return False
     disallowed_words = json.loads(os.environ.get("DISALLOWED_WORDS"))
-    if word in disallowed_words:
+    if word.lower() in disallowed_words:
         print(
             "Hmm that word isn't allowed. Please be respectful/appropriate with your guess."
         )
