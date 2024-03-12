@@ -1,4 +1,5 @@
 import requests
+import os
 
 
 def check_word_validity(word, guessed_words):
@@ -7,6 +8,9 @@ def check_word_validity(word, guessed_words):
         return False
     if word in guessed_words:
         print("You've already guessed that one!")
+        return False
+    if word in os.environ.get("DISALLOWED_WORDS"):
+        print("Hmm that word isn't allowed. Please be respectful/appropriate with your guess.")
         return False
     dict_response = requests.get(
         f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
