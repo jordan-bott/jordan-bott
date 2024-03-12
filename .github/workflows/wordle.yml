@@ -42,25 +42,25 @@ jobs:
         SHOW_TITLE: true
         SHOW_TIME: true
 
-    # - name: Commit Files
-    #   id: commit
-    #   run: |
-    #     git config --local user.email "action@github.com"
-    #     git config --local user.name "github-actions"
-    #     git add README.md
-    #     if [-z "$(git status --porcelain)"]; then
-    #       echo "::set-output name=push::false"
-    #     else
-    #       git commit -m "Add changes" -a
-    #       echo "::set-output name=push::true"
-    #     fi
-    #   shell: bash
+    - name: Commit Files
+      id: commit
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "github-actions"
+        git add README.md
+        if [-z "$(git status --porcelain)"]; then
+          echo "::set-output name=push::false"
+        else
+          git commit -m "Add changes" -a
+          echo "::set-output name=push::true"
+        fi
+      shell: bash
 
-    # - name: Push Changes
-    #   if: steps.commit.outputs.push == 'true'
-    #   uses: ad-m/github-push-action@master
-    #   with:
-    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Push Changes
+      if: steps.commit.outputs.push == 'true'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Close Issue
       env:
