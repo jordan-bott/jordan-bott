@@ -33,7 +33,7 @@ Click "make a guess" below to contribute. ⬇️
 
 ![Static Badge](https://img.shields.io/badge/MAKE%20A%20GUESS-mediumpurple?style=flat&link=https%3A%2F%2Fgithub.com%2Fjordan-bott%2Fjordan-bott%2Fissues%2Fnew%3Fassignees%3D%26labels%3D%26projects%3D%26template%3Dwordle_guess.md%26title%3Dwordleguess%257C%255BPUT%2B5%2BLETTER%2BWORD%2BHERE%255D)
 
-🧑‍💻 Most Recent Player: [![static badge](https://img.shields.io/badge/jordan--bott-lightcyan?logo=github&link=https%3A%2F%2Fgithub.com%2Fjordan-bott)](https://github.com/jordan-bott)
+🧑‍💻 Most Recent Player: &emsp; [![static badge](https://img.shields.io/badge/jordan--bott-burlywood?logo=github&link=https%3A%2F%2Fgithub.com%2Fjordan-bott)](https://github.com/jordan-bott)
 
 | Current Game | Letters |
 | ------------ | ------- |
