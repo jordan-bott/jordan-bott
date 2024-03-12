@@ -33,25 +33,16 @@ jobs:
         black wordle/
         echo 'black ran'
 
-    - name: Add in Waka Time
-      uses: athul/waka-readme@master
-      with:
-        WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-        TIME_RANGE: last_7_days
-        SHOW_TOTAL: true
-        SHOW_TITLE: true
-        SHOW_TIME: true
-
     - name: Commit Files
       id: commit
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "github-actions"
-        git add README.md
+        git add .
         if [-z "$(git status --porcelain)"]; then
           echo "::set-output name=push::false"
         else
-          git commit -m "Add changes" -a
+          git commit -m "wordle move updated" -a
           echo "::set-output name=push::true"
         fi
       shell: bash
@@ -61,6 +52,15 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Add in Waka Time
+      uses: athul/waka-readme@master
+      with:
+        WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        TIME_RANGE: last_7_days
+        SHOW_TOTAL: true
+        SHOW_TITLE: true
+        SHOW_TIME: true
 
     - name: Close Issue
       env:
