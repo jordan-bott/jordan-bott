@@ -1,6 +1,6 @@
 player_data = {
     "jordan-bott": {
-        "total_moves": 20,
+        "total_moves": 21,
         "total_winning_moves": 3,
         "total_invalid_guesses": 0,
         "first_move_made": "2024-03-10",
@@ -23,6 +23,7 @@ player_data = {
             "SCOWL": 1,
             "RHYME": 1,
             "HAIRY": 1,
+            "BERRY": 1,
         },
     },
     "IanKBovard": {
