@@ -1,5 +1,6 @@
 import requests
 import os
+import json
 
 
 def check_word_validity(word, guessed_words):
@@ -9,8 +10,8 @@ def check_word_validity(word, guessed_words):
     if word in guessed_words:
         print("You've already guessed that one!")
         return False
-    disallowed_words = os.environ.get("DISALLOWED_WORDS")
-    print(list(disallowed_words))
+    disallowed_words = json.loads(os.environ.get("DISALLOWED_WORDS"))
+    print(disallowed_words)
     print(type(disallowed_words))
     if word in os.environ.get("DISALLOWED_WORDS"):
         print(
