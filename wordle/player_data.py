@@ -1,6 +1,6 @@
 player_data = {
     "jordan-bott": {
-        "total_moves": 18,
+        "total_moves": 19,
         "total_winning_moves": 3,
         "total_invalid_guesses": 0,
         "first_move_made": "2024-03-10",
@@ -21,6 +21,7 @@ player_data = {
             "FINCH": 1,
             "SPOOL": 1,
             "SCOWL": 1,
+            "RHYME": 1,
         },
     },
     "IanKBovard": {
