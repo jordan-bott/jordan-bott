@@ -26,7 +26,9 @@ Text         5 mins          ▒░░░░░░░░░░░░░░░░
 
  ![Static Badge](https://img.shields.io/badge/Total%20Players-6-mediumpurple?style=flat&labelColor=lavender)  ![Static Badge](https://img.shields.io/badge/Total%20Wins-4-darkseagreen?style=flat&labelColor=ecfbe3) ![Static Badge](https://img.shields.io/badge/Total%20Games-5-khaki?style=flat&labelColor=lightyellow) ![Static Badge](https://img.shields.io/badge/Total%20Moves-31-pink?style=flat&labelColor=lavenderblush)
 
-> Everyone is welcome to participate! This is an **asynchronous**, and **collaborative** version of wordle, where players make one move at a time. Please make as many or as few moves as you would like!
+```
+Everyone is welcome to participate! This is an **asynchronous**, and **collaborative** version of wordle, where players make one move at a time. Please make as many or as few moves as you would like!
+```
 
 Click "make a guess" below to contribute. ⬇️
 
