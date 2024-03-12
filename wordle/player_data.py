@@ -1,8 +1,8 @@
 player_data = {
     "jordan-bott": {
-        "total_moves": 22,
+        "total_moves": 23,
         "total_winning_moves": 3,
-        "total_invalid_guesses": 1,
+        "total_invalid_guesses": 2,
         "first_move_made": "2024-03-10",
         "most_recent_move": "2024-03-12",
         "guess_history": {
