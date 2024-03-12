@@ -211,5 +211,5 @@ In this section I will share any future feature ideas that I have, as well as an
     - Ex. In the guess "latte" for the word "lathe", you will see a schema like this: 🟩🟩🟩🟨🟩 .<br /> However, the second `t` should be black as the `t` has been placed, and there are not two `t` in the word.
 
 ## Acknowledgements
-- My idea for this project came from seeing [Jonathan Gin's](https://github.com/JonathanGin52) epic connect4 game 🎲
+- My idea for this project came from seeing [Jonathan Gin's](https://github.com/JonathanGin52) connect4 game 🎲
 - A list of other cool GitHub profiles can be found [here](https://github.com/abhisheknaiidu/awesome-github-profile-readme?tab=readme-ov-file)!

@@ -24,13 +24,17 @@ Text         5 mins          ▒░░░░░░░░░░░░░░░░
 
 # Let's Play Wordle!
 
+ ![Static Badge](https://img.shields.io/badge/Total%20Players-6-mediumpurple?style=flat&labelColor=lavender)  ![Static Badge](https://img.shields.io/badge/Total%20Wins-4-darkseagreen?style=flat&labelColor=ecfbe3) ![Static Badge](https://img.shields.io/badge/Total%20Games-5-khaki?style=flat&labelColor=lightyellow) ![Static Badge](https://img.shields.io/badge/Total%20Moves-30-pink?style=flat&labelColor=lavenderblush)
+
+
+
 Everyone is welcome to participate! This is an **asynchronous** and **collaborative** version of wordle, where players make one move at a time. Please make as many or as few moves as you would like!
 
-Click "make a guess" below to contribute.
+Click "make a guess" below to contribute. ⬇️
 
 [MAKE A GUESS](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
 
-Most Recent Player: [KamronP23](https://github.com/KamronP23)
+🧑‍💻 Most Recent Player: [KamronP23](https://github.com/KamronP23)
 
 | Current Game | Letters |
 | ------------ | ------- |

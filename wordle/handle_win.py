@@ -1,5 +1,6 @@
 from game_data import game_data
 from new_game_data import new_game_data
+from lifetime_data import lifetime_data
 import json
 
 
@@ -18,7 +19,9 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
 
-Let's play wordle! Everyone is welcome to participate!
+# Let's play wordle! Everyone is welcome to participate!
+
+ ![Static Badge](https://img.shields.io/badge/Total%20Players-{lifetime_data["players"]}-mediumpurple?style=flat&labelColor=lavender)  ![Static Badge](https://img.shields.io/badge/Total%20Wins-{lifetime_data["wins"]}-darkseagreen?style=flat&labelColor=ecfbe3) ![Static Badge](https://img.shields.io/badge/Total%20Games-{lifetime_data["games_played"]}-khaki?style=flat&labelColor=lightyellow) ![Static Badge](https://img.shields.io/badge/Total%20Moves-{lifetime_data["moves_made"]}-pink?style=flat&labelColor=lavenderblush)
 
 We won! 🎉 The word was: {wordle_word}
 
