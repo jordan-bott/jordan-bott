@@ -6,6 +6,16 @@ import json
 
 def handle_lose(wordle_word, user):
 
+    shield_user = ""
+    if "-" in user or "_" in user:
+        for letter in user:
+            if letter == "-":
+                shield_user += "--"
+            elif letter == "_":
+                shield_user += "__"
+            else:
+                shield_user += letter
+
     letter_schema = "".join(game_data["letter_schema"])
 
     readme_content = f"""
@@ -31,9 +41,9 @@ We lost this one 🥲. The word was: {wordle_word}
 
 Click "start a new game" to try again! ⬇️
 
-[START A NEW GAME](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
+![Static Badge](https://img.shields.io/badge/START%20A%20NEW%20GAME-mediumpurple?style=flat&link=https%3A%2F%2Fgithub.com%2Fjordan-bott%2Fjordan-bott%2Fissues%2Fnew%3Fassignees%3D%26labels%3D%26projects%3D%26template%3Dwordle_guess.md%26title%3Dwordleguess%257C%255BPUT%2B5%2BLETTER%2BWORD%2BHERE%255D)
 
-🧑‍💻 Most Recent Player: [{user}](https://github.com/{user})
+🧑‍💻 Most Recent Player: ![static badge](https://img.shields.io/badge/{shield_user}-lavender?logo=github&link=https%3A%2F%2Fgithub.com%2F{user})
 
 | Current Game | Letters |
 | ------------ | ------- |
