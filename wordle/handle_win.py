@@ -49,9 +49,7 @@ Click "start a new game" to play again! ⬇️
 | ------------ | ------- |
 | {game_data["schema"]} | {letter_schema} |
 
-Do you love stats? Check out these: &ensp; [![Static Badge](https://img.shields.io/badge/PLAYER%20STATS-darkseagreen?style=flat)
-](./wordle/stat_sheets/PlayerData.md) &ensp;  [![Static Badge](https://img.shields.io/badge/GLOBAL%20STATS-darkseagreen?style=flat)
-](./wordle/stat_sheets/GlobalData.md)
+Do you love stats? Check out these: &ensp; [![Static Badge](https://img.shields.io/badge/PLAYER%20STATS-darkseagreen?style=flat)](./wordle/stat_sheets/PlayerData.md) &ensp;  [![Static Badge](https://img.shields.io/badge/GLOBAL%20STATS-darkseagreen?style=flat)](./wordle/stat_sheets/GlobalData.md)
 
 """
 
