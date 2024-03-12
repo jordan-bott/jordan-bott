@@ -1,10 +1,10 @@
 lifetime_data = {
-    "moves_made": 45,
+    "moves_made": 46,
     "games_played": 7,
     "players": 7,
     "wins": 6,
     "loses": 1,
-    "invalid_guesses": 3,
+    "invalid_guesses": 4,
     "words_guessed": {
         "UNDER": 1,
         "QUEER": 1,

@@ -7,24 +7,11 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 
 
 <!--START_SECTION:waka-->
-
-```txt
-From: 05 March 2024 - To: 12 March 2024
-
-Total Time: 16 hrs 19 mins
-
-Python       10 hrs 23 mins  ████████████████░░░░░░░░░   63.62 %
-Markdown     4 hrs 10 mins   ██████▒░░░░░░░░░░░░░░░░░░   25.55 %
-YAML         1 hr 8 mins     █▓░░░░░░░░░░░░░░░░░░░░░░░   06.97 %
-XML          19 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.96 %
-Text         5 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.59 %
-```
-
 <!--END_SECTION:waka-->
 
 # Let's play <img src="./wordle/tiles/yellow/W.svg" width="28" /><img src="./wordle/tiles/green/O.svg" width="28" /><img src="./wordle/tiles/grey/R.svg" width="28" /><img src="./wordle/tiles/grey/D.svg" width="28" /><img src="./wordle/tiles/green/L.svg" width="28" /><img src="./wordle/tiles/grey/E.svg" width="28" />
 
- ![Static Badge](https://img.shields.io/badge/Total%20Players-7-mediumpurple?style=flat&labelColor=lavender)  ![Static Badge](https://img.shields.io/badge/Total%20Wins-6-darkseagreen?style=flat&labelColor=ecfbe3) ![Static Badge](https://img.shields.io/badge/Total%20Games-7-khaki?style=flat&labelColor=lightyellow) ![Static Badge](https://img.shields.io/badge/Total%20Moves-45-pink?style=flat&labelColor=lavenderblush)
+ ![Static Badge](https://img.shields.io/badge/Total%20Players-7-mediumpurple?style=flat&labelColor=lavender)  ![Static Badge](https://img.shields.io/badge/Total%20Wins-6-darkseagreen?style=flat&labelColor=ecfbe3) ![Static Badge](https://img.shields.io/badge/Total%20Games-7-khaki?style=flat&labelColor=lightyellow) ![Static Badge](https://img.shields.io/badge/Total%20Moves-46-pink?style=flat&labelColor=lavenderblush)
 
 > [!TIP]
 > Everyone is welcome to participate! This is an **asynchronous**, and **collaborative** version of wordle, where players make one move at a time. Please make as many or as few moves as you would like!
