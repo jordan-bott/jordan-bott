@@ -41,7 +41,7 @@ def main():
         updated_game_data["guessed_words"].append(guess)
     else:
         is_new_player = update_player_data(user, guess, False, is_valid=False)
-        update_lifetime_data(is_new_player, False, guess, wordle_word, is_valid=False)
+        update_lifetime_data(is_new_player, False, guess, wordle_word, is_invalid=True)
         return handle_invalid_guess(user)
 
     # create schemas
