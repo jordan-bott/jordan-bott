@@ -33,41 +33,37 @@ jobs:
         black wordle/
         echo 'black ran'
 
-    - name: Commit Files
-      id: commit
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "github-actions"
-        git add README.md
-        if [-z "$(git status --porcelain)"]; then
-          echo "::set-output name=push::false"
-        else
-          git commit -m "Add changes" -a
-          echo "::set-output name=push::true"
-        fi
-      shell: bash
-
-    - name: Push Changes
-      if: steps.commit.outputs.push == 'true'
-      uses: ad-m/github-push-action@master
+    - name: Add in Waka Time
+      uses: athul/waka-readme@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        TIME_RANGE: last_7_days
+        SHOW_TOTAL: true
+        SHOW_TITLE: true
+        SHOW_TIME: true
+
+    # - name: Commit Files
+    #   id: commit
+    #   run: |
+    #     git config --local user.email "action@github.com"
+    #     git config --local user.name "github-actions"
+    #     git add README.md
+    #     if [-z "$(git status --porcelain)"]; then
+    #       echo "::set-output name=push::false"
+    #     else
+    #       git commit -m "Add changes" -a
+    #       echo "::set-output name=push::true"
+    #     fi
+    #   shell: bash
+
+    # - name: Push Changes
+    #   if: steps.commit.outputs.push == 'true'
+    #   uses: ad-m/github-push-action@master
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Close Issue
       env:
         GH_TOKEN: ${{ github.token }}
       run: |
         gh issue close ${{github.event.issue.number}} -c "Thank you for playing!"
-
-  update-waka:
-    name: WakaReadme DevMetrics
-    needs: wordle-guess
-    runs-on: ubuntu-latest
-    steps:
-      - uses: athul/waka-readme@master # this action name
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          TIME_RANGE: last_7_days
-          SHOW_TOTAL: true
-          SHOW_TITLE: true
-          SHOW_TIME: true
