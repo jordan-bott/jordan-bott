@@ -195,7 +195,6 @@ bezel
 bible
 bicep
 biddy
-bigot
 bilge
 billy
 binge
@@ -243,7 +242,6 @@ bobby
 boney
 bongo
 bonus
-booby
 boost
 booth
 booty
@@ -856,7 +854,6 @@ ghost
 ghoul
 giant
 giddy
-gipsy
 girly
 girth
 given
@@ -920,7 +917,6 @@ gripe
 groan
 groin
 groom
-grope
 gross
 group
 grout
@@ -992,7 +988,6 @@ homer
 honey
 honor
 horde
-horny
 horse
 hotel
 hotly
@@ -1075,7 +1070,6 @@ karma
 kayak
 kebab
 khaki
-kinky
 kiosk
 kitty
 knack
@@ -1489,7 +1483,6 @@ proxy
 prude
 prune
 psalm
-pubic
 pudgy
 puffy
 pulpy
@@ -1689,7 +1682,6 @@ sedan
 seedy
 segue
 seize
-semen
 sense
 sepia
 serif
@@ -1863,7 +1855,6 @@ spell
 spelt
 spend
 spent
-sperm
 spice
 spicy
 spied
