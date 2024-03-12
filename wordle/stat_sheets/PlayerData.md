@@ -7,4 +7,4 @@
 | [7ingyu](https://github.com/7ingyu) | 1 | 0 | 1 | March 11, 2024 | March 11, 2024 | COEST (1 times!) |
 | [emilyvictany](https://github.com/emilyvictany) | 6 | 0 | 0 | March 11, 2024 | March 11, 2024 | MATER (1 times!) |
 | [KamronP23](https://github.com/KamronP23) | 1 | 0 | 0 | March 11, 2024 | March 11, 2024 | SWEAR (1 times!) |
-| [angelajfisher](https://github.com/angelajfisher) | 1 | 0 | 0 | March 12, 2024 | March 12, 2024 | TRACK (1 times!) |
+| [angelajfisher](https://github.com/angelajfisher) | 2 | 0 | 0 | March 12, 2024 | March 12, 2024 | BRINE (1 times!) |
