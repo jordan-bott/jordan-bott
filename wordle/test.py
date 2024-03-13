@@ -39,7 +39,7 @@ def create_schema(wordle_word, guess):
             # if there is more than one instance of the letter in the wordle word
             # we should check if all instances of the letter are already in the right place first
             # else:
-                # figure out what indices the letter is found at
+            # figure out what indices the letter is found at
             wordle_word_copy = wordle_word
             for _ in range(letter_count):
                 index = wordle_word_copy.find(letter)
@@ -55,7 +55,9 @@ def create_schema(wordle_word, guess):
             # determine if all of that letter are in the correct place
             # if they are not, add a yellow
             if letter_count != found_green_letter_count:
-                schema[j] = f'<img src="./wordle/tiles/yellow/{letter}.svg" width="40" />'
+                schema[j] = (
+                    f'<img src="./wordle/tiles/yellow/{letter}.svg" width="40" />'
+                )
                 # if none of the right locations have been found, the keyboard should show
                 # the letter as yellow
                 if found_green_letter_count == 0:

@@ -47,10 +47,16 @@ def create_schema(wordle_word, guess):
             # determine if all of that letter are in the correct place
             # if they are not, add a yellow
             if letter_count != found_green_letter_count:
-                schema[j] = f'<img src="./wordle/tiles/yellow/{letter}.svg" width="40" />'
+                schema[j] = (
+                    f'<img src="./wordle/tiles/yellow/{letter}.svg" width="40" />'
+                )
                 # if none of the right locations have been found, the keyboard should show
                 # the letter as yellow
-                if found_green_letter_count == 0 and letter_schema[letter_indicies[letter]] != f'<img src="./wordle/letters/green/{letter}.svg" width="20" />':
+                if (
+                    found_green_letter_count == 0
+                    and letter_schema[letter_indicies[letter]]
+                    != f'<img src="./wordle/letters/green/{letter}.svg" width="20" />'
+                ):
                     letter_schema[letter_indicies[letter]] = (
                         f'<img src="./wordle/letters/yellow/{letter}.svg" width="20" />'
                     )
