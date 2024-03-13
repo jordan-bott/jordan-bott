@@ -5,9 +5,8 @@ from game_data import game_data
 def create_schema(wordle_word, guess):
     schema = ["", "", "", "", ""]
     letter_schema = game_data["letter_schema"]
-    schema_key = ["", "", "", "", ""]
+    schema_key = ["B", "B", "B", "B", "B"]
 
-    # check for all of the greens from the guess
     for i in range(0, 5):
         letter = guess[i]
         if wordle_word[i] == letter:
@@ -17,7 +16,6 @@ def create_schema(wordle_word, guess):
             )
             schema_key[i] = "G"
 
-    # check for yellows and greys
     for j in range(0, 5):
         letter = guess[j]
         if letter not in wordle_word:
@@ -31,7 +29,17 @@ def create_schema(wordle_word, guess):
             letter_index_list = []
             letter_count = wordle_word.count(letter)
 
-            # figure out what indices the letter is found at
+            # # if there is only once instance of the letter, we can safely assume this should be yellow
+            # if letter_count == 1:
+            #     schema[j] = f'<img src="./wordle/tiles/yellow/{letter}.svg" width="40" />'
+            #     letter_schema[letter_indicies[letter]] = (
+            #         f'<img src="./wordle/letters/yellow/{letter}.svg" width="20" />'
+            #     )
+            #     schema_key[j] = "Y"
+            # if there is more than one instance of the letter in the wordle word
+            # we should check if all instances of the letter are already in the right place first
+            # else:
+                # figure out what indices the letter is found at
             wordle_word_copy = wordle_word
             for _ in range(letter_count):
                 index = wordle_word_copy.find(letter)
@@ -75,3 +83,6 @@ def create_schema(wordle_word, guess):
     schema_str = "".join(schema)
     schema_str += "<br/>"
     return [schema_str, letter_schema]
+
+
+print(create_schema("LATTE", "TLTTE"))
