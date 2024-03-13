@@ -1,8 +1,8 @@
 lifetime_data = {
-    "moves_made": 55,
-    "games_played": 9,
+    "moves_made": 56,
+    "games_played": 10,
     "players": 7,
-    "wins": 8,
+    "wins": 9,
     "loses": 1,
     "invalid_guesses": 4,
     "words_guessed": {
@@ -53,6 +53,7 @@ lifetime_data = {
         "MOTEL": 1,
         "APPLE": 1,
         "LABEL": 1,
+        "BAGEL": 1,
     },
     "wordle_words": [
         "EASEL",
@@ -64,5 +65,6 @@ lifetime_data = {
         "GROWN",
         "GIRLY",
         "PRISM",
+        "BAGEL",
     ],
 }

@@ -1,7 +1,7 @@
 player_data = {
     "jordan-bott": {
-        "total_moves": 31,
-        "total_winning_moves": 4,
+        "total_moves": 32,
+        "total_winning_moves": 5,
         "total_invalid_guesses": 3,
         "first_move_made": "2024-03-10",
         "most_recent_move": "2024-03-13",
@@ -29,6 +29,7 @@ player_data = {
             "MOTEL": 1,
             "APPLE": 1,
             "LABEL": 1,
+            "BAGEL": 1,
         },
     },
     "IanKBovard": {
