@@ -14,3 +14,5 @@ Example:
 wordleguess|[hello]
 
 You will see your guess appear in the [readme](https://github.com/jordan-bott) in roughly 45 seconds! Thanks for playing!
+
+If you'd like to watch for when your guess appears you can watch for the action to complete [here!](https://github.com/jordan-bott/jordan-bott/actions)
