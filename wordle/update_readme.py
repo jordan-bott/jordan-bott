@@ -5,14 +5,13 @@ from lifetime_data import lifetime_data
 def update_readme(user):
 
     shield_user = ""
-    if "-" in user or "_" in user:
-        for letter in user:
-            if letter == "-":
-                shield_user += "--"
-            elif letter == "_":
-                shield_user += "__"
-            else:
-                shield_user += letter
+    for letter in user:
+        if letter == "-":
+            shield_user += "--"
+        elif letter == "_":
+            shield_user += "__"
+        else:
+            shield_user += letter
 
     letter_schema = "".join(game_data["letter_schema"])
 

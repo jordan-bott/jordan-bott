@@ -5,14 +5,13 @@ from lifetime_data import lifetime_data
 def handle_invalid_guess(user):
 
     shield_user = ""
-    if "-" in user or "_" in user:
-        for letter in user:
-            if letter == "-":
-                shield_user += "--"
-            elif letter == "_":
-                shield_user += "__"
-            else:
-                shield_user += letter
+    for letter in user:
+        if letter == "-":
+            shield_user += "--"
+        elif letter == "_":
+            shield_user += "__"
+        else:
+            shield_user += letter
 
     letter_schema = "".join(game_data["letter_schema"])
 
@@ -40,7 +39,7 @@ Whoops! The last guess made was **invalid**.
 
 [![Static Badge](https://img.shields.io/badge/MAKE%20A%20GUESS-mediumpurple?style=flat)](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
 
-🧑‍💻 Most Recent Player:  &ensp; [![static badge](https://img.shields.io/badge/{shield_user}-burlywood?logo=github)](https://github.come/{user})
+🧑‍💻 Most Recent Player:  &ensp; [![static badge](https://img.shields.io/badge/{shield_user}-burlywood?logo=github)](https://github.com/{user})
 
 | Current Game | Letters |
 | ------------ | ------- |

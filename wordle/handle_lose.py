@@ -7,14 +7,13 @@ import json
 def handle_lose(wordle_word, user):
 
     shield_user = ""
-    if "-" in user or "_" in user:
-        for letter in user:
-            if letter == "-":
-                shield_user += "--"
-            elif letter == "_":
-                shield_user += "__"
-            else:
-                shield_user += letter
+    for letter in user:
+        if letter == "-":
+            shield_user += "--"
+        elif letter == "_":
+            shield_user += "__"
+        else:
+            shield_user += letter
 
     letter_schema = "".join(game_data["letter_schema"])
 
@@ -43,7 +42,7 @@ Click "start a new game" to try again! ⬇️
 
 [![Static Badge](https://img.shields.io/badge/START%20A%20NEW%20GAME-mediumpurple?style=flat)](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
 
-🧑‍💻 Most Recent Player:  &ensp; [![static badge](https://img.shields.io/badge/{shield_user}-burlywood?logo=github)](https://github.come/{user})
+🧑‍💻 Most Recent Player:  &ensp; [![static badge](https://img.shields.io/badge/{shield_user}-burlywood?logo=github)](https://github.com/{user})
 
 | Current Game | Letters |
 | ------------ | ------- |
