@@ -57,15 +57,15 @@ There are multiple python files used in this project (18 of them!), however only
 Feel free to skip to a specific file's explanation here:
 |   |   |   |
 | - | - | - |
-|[main.py](#mainpy) |  [check_word_validity.py](#check_word_validitypy) |  [create_schema.py](#create_schemapy)  |
-| [game_data.py](#game_datapy) | [handle_global_stats.py](#handle_global_statspy) |[handle_invalid_guess.py](#handle_invalid_guesspy) |
-| [handle_lose.py](#handle_losepy) | [handle_player_stats.py](#handle_player_statspy) | [handle_win.py](#handle_winpy) |
-| [letter_indicies.py](#letter_indiciespy) |[lifetime_data.py](#lifetime_datapy) | [new_game_data.py](#new_game_datapy) |
-|  [new_letter_schema.py](#new_letter_schemapy) | [player_data.py](#player_datapy) | [possible_words.py](#possible_wordspy) |
-| [update_lifetime_data.py](#update_lifetime_datapy) | [update_player_data.py](#update_player_datapy) | [update_readme.py](#update_readmepy) |
+|[main.py](#📄-mainpy) |  [check_word_validity.py](#📄-check_word_validitypy) |  [create_schema.py](#📄-create_schemapy)  |
+| [game_data.py](#📄-game_datapy) | [handle_global_stats.py](#📄-handle_global_statspy) |[handle_invalid_guess.py](#📄-handle_invalid_guesspy) |
+| [handle_lose.py](#📄-handle_losepy) | [handle_player_stats.py](#📄-handle_player_statspy) | [handle_win.py](#📄-handle_winpy) |
+| [letter_indicies.py](#📄-letter_indiciespy) |[lifetime_data.py](#📄-lifetime_datapy) | [new_game_data.py](#📄-new_game_datapy) |
+|  [new_letter_schema.py](#📄-new_letter_schemapy) | [player_data.py](#📄-player_datapy) | [possible_words.py](#📄-possible_wordspy) |
+| [update_lifetime_data.py](#📄-update_lifetime_datapy) | [update_player_data.py](#📄-update_player_datapy) | [update_readme.py](#📄-update_readmepy) |
 
 
-#### `main.py`
+#### 📄 `main.py`
 
 You can view `main.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/main.py)
 
@@ -125,71 +125,84 @@ If we neither won nor loss, than the game continues! We will update the player d
 
 Finally, we will update the readme with the most recent guess using [`update_readme`](#update_readmepy), finishing the `main.py` process! The GitHub workflow will continue onto it's next step.
 
-#### `check_word_validity.py`
+#### 📄 `check_word_validity.py`
+
+You can view `check_word_validity.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/check_word_validity.py)
+
+The purpose of the `check_word_validity` function is to check that the guess is a valid wordle guess. To do this, we check a few things. If all checks pass, `check_word_validity` will return `True`. This is used in `main.py` to determine stat saving and the rendering of the ReadMe. If any single check fails, `check_word_validity` will return `False`.
+
+1. Check if the guess is 5 letters long. This double checks that the guess grabbed from the title of the issue is exactly 5 characters long. Because we index the title to grab the guess, the guess is almost certainly 5 characters, however this serves as a way to double check! If the guess is not exactly 5 letters, `check_word_validity` returns `False` and "Please guess a 5 letter word" is printed to the workflow's logs.
+
+2. Checks if the guess has been guessed already this game. A list of guessed words for this game is stored in `[game_data.py`](#📄-game_datapy). The guess is checked against this list to determine if it has been guessed already, if it has, `check_word_validity` returns `False` and "You've already guess that one!" is printed to the workflow's logs.
+
+3. Checks if the guess is in the disallowed words list. As this is a professional space, I have a hidden list of words that are inappropriate, offensive, or unprofessional. This check makes sure the guess is not found in this list. If it is found in this list, `check_word_validity` returns `False`, and "Hmm that word isn't allowed. Please be respectful/appropriate with your guess" is printed to the workflow's logs.
+
+4. Checks if the guess is found within the dictionary. Players may only guess actual words (i.e. qwerty is not a valid guess), so [Free Dictionary API](https://dictionaryapi.dev/) is used to check if the guess can be found in the dictionary. If the guess is found in the dictionary, a list is returned. If it is not found in the dictionary a dictionary is returned. This check makes sure than a list is returned, if a dictionary has been returned `check_word_validity` will return `False` and "Whoops, that word isn't in the dictionary" is printed to the workflow's logs. Occasionally, the API returns None. If this happens, `check_word_validity` returns `False` and "Bad API response" is printed to the workflow's logs.
+
+After these 4 checks, the code knows the word is a valid guess! `check_word_validity` will return `True`.
+
+
+#### 📄 `create_schema.py`
 
 *coming soon!*
 
-#### `create_schema.py`
+#### 📄 `game_data.py`
 
 *coming soon!*
 
-#### `game_data.py`
+#### 📄 `handle_global_stats.py`
 
 *coming soon!*
 
-#### `handle_global_stats.py`
+#### 📄 `handle_invalid_guess.py`
 
 *coming soon!*
 
-#### `handle_invalid_guess.py`
+#### 📄 `handle_lose.py`
 
 *coming soon!*
 
-#### `handle_lose.py`
+#### 📄 `handle_player_stats.py`
 
 *coming soon!*
 
-#### `handle_player_stats.py`
+#### 📄 `handle_win.py`
 
 *coming soon!*
 
-#### `handle_win.py`
+#### 📄 `letter_indicies.py`
 
 *coming soon!*
 
-#### `letter_indicies.py`
+#### 📄 `lifetime_data.py`
 
 *coming soon!*
 
-#### `lifetime_data.py`
+#### 📄 `new_game_data.py`
 
 *coming soon!*
 
-#### `new_game_data.py`
+#### 📄 `new_letter_schema.py`
 
 *coming soon!*
 
-#### `new_letter_schema.py`
+#### 📄 `player_data.py`
 
 *coming soon!*
 
-#### `player_data.py`
+#### 📄 `possible_words.py`
 
 *coming soon!*
 
-#### `possible_words.py`
+#### 📄 `update_lifetime_data.py`
 
 *coming soon!*
 
-#### `update_lifetime_data.py`
+#### 📄 `update_player_data.py`
 
 *coming soon!*
 
-#### `update_player_data.py`
-
-*coming soon!*
-
-#### `update_readme.py`
+#### 📄 `update_readme.py`
 
 *coming soon!*
 
@@ -201,7 +214,6 @@ In this section I will share any future feature ideas that I have, as well as an
 
 - Further stat tracking
 - Adjusting letter section to be styled more like a keyboard
-- Adding shield.io images for stats
 - Auto show game schema and letters in the issue template
 - Further error handling to update the ReadMe should something bad happen in the workflow
 
