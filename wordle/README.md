@@ -219,7 +219,7 @@ In this section I will share any future feature ideas that I have, as well as an
 
 ### Bugs to Fix
 
-- Letters that exist in the word in more than one location do not display properly.
+- ✅ Solved: Letters that exist in the word in more than one location do not display properly.
     - Ex. In the guess "latte" for the word "lathe", you will see a schema like this: 🟩🟩🟩🟨🟩 .<br /> However, the second `t` should be black as the `t` has been placed, and there are not two `t` in the word.
 
 ## Acknowledgements
