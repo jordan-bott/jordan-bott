@@ -1,5 +1,5 @@
 lifetime_data = {
-    "moves_made": 59,
+    "moves_made": 60,
     "games_played": 10,
     "players": 7,
     "wins": 9,
@@ -9,7 +9,7 @@ lifetime_data = {
         "UNDER": 1,
         "QUEER": 1,
         "QUITE": 1,
-        "QUICK": 1,
+        "QUICK": 2,
         "CRANE": 2,
         "FEARS": 1,
         "BLEAK": 1,
