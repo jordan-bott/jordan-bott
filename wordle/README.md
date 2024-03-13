@@ -188,7 +188,24 @@ Now that the schema is fully built, we want to turn the schema into a string, an
 
 #### 📄 `game_data.py`
 
-*coming soon!*
+I have several files in this repo that keep track of data long term. There were a few ways to do this (json, yml, md, etc.), but I decided to keep it in pure python. The purpose of `game_data.py` is to keep track of the current game's data. This is important as the script is ran every time that there is a new guess, if we didn't track the index of the wordle word, the schema, and some other key items the game would "reset" every time there was a new guess - which is not the behavior that we want.
+
+`game_data.py` contains only a dictionary called `game_data` that keeps track of the following data:
+
+- `wordle_index` (string)
+    - I have chosen to track the wordle index so that the actual wordle word is not revealed in the code. While someone could theorhetically find the wordle word based on it's index, this makes it a few more steps and will hopefully deter most cheating. The index corresponds to a list of possible words found in `possible_words.py`. At the beginning of the script, the code will assign the wordle word using the `possible_words` list, and the index stored here.
+- `turn_number` (integer)
+    - Tracking the turn number is important to determine when the end of the game is. The game ends when either the wordle word is guessed, or the community has made 6 guesses. When the turn number is 6 (`turn_number == 6`) the game will trigger a loss.
+- `guessed_words` (list)
+    - Guessed words are tracked to be used in [`check_word_validity.py`](#📄-check_word_validitypy). If a word has already been guessed this game, we don't want to use a turn guessing it again, so the code will determine that guess to be invalid.
+- `players` (list)
+    - A list of players is tracked to keep track of which players have participated in the current game. This list will have use in future features!
+- `schema` (string)
+    - The schema string keeps a string of all of the image tags to be added to the ReadMe and is created in [`create_schema.py`](#📄-create_schemapy). The schema is the letter tiles used to show the yellows, greens, and grays for a guess.
+- `letter_schema` (list)
+    - The letter schema is what is used to produce the keyboard next to the game that displays if a particular letter has is green/yellow/gray/unguessed in the game. The letter schema is edited in [`create_schema.py`](#📄-create_schemapy).
+
+All of the game data is then written to the `game_data.py` file in [`main.py`](#📄-mainpy) after all of the `updated_game_data` has been correctly updated for the current guess.
 
 #### 📄 `handle_global_stats.py`
 
@@ -250,12 +267,13 @@ Now that the schema is fully built, we want to turn the schema into a string, an
 
 In this section I will share any future feature ideas that I have, as well as any bugs that have come up. If you notice a bug, or have a feature idea, please send me an email ([jordanbott.dev@gmail.com](jordanbott.dev@gmail.com))!
 
-### Feature Ideas
+### Future Feature Ideas
 
 - Further stat tracking
 - Adjusting letter section to be styled more like a keyboard
 - Auto show game schema and letters in the issue template
 - Further error handling to update the ReadMe should something bad happen in the workflow
+- Email sent to players who have participated after the game is complete
 
 ### Bugs to Fix
 
