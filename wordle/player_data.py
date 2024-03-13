@@ -1,7 +1,7 @@
 player_data = {
     "jordan-bott": {
-        "total_moves": 36,
-        "total_winning_moves": 5,
+        "total_moves": 37,
+        "total_winning_moves": 6,
         "total_invalid_guesses": 3,
         "first_move_made": "2024-03-10",
         "most_recent_move": "2024-03-13",
@@ -33,6 +33,7 @@ player_data = {
             "SNOWY": 1,
             "FLICK": 1,
             "BRICK": 1,
+            "CHICK": 1,
         },
     },
     "IanKBovard": {
