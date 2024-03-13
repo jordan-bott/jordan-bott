@@ -144,7 +144,47 @@ After these 4 checks, the code knows the word is a valid guess! `check_word_vali
 
 #### 📄 `create_schema.py`
 
-*coming soon!*
+This file contains the most complex logic of the whole project, as it is what determines if a letter should be yellow, green, or gray. At first, I thought this was pretty straight forward. If the letter matches the letter in that spot, it's green (`guess[i] == wordle_word[i]`). The greens are nice and straight forward like this! The grays are also straight forward. If the letter cannot be found anywhere in the wordle word (`letter not in wordle_word`), the letter should be gray.
+
+The logic of the yellows gets a bit more complex. Originally I thought if the letter is somewhere in the wordle word, and it is not in that spot (`guess[i] != wordle_word[i] and guess[i] in wordle_word`) then the letter should be yellow. However let's consider the following scenario:
+
+Wordle Word: LATHE
+
+Guess: LATTE
+
+With this wordle word and guess, along with our previous simple logic it would produce a schema like this:
+
+<img src="./tiles/green/L.svg" width="20" /><img src="./tiles/green/A.svg" width="20" /><img src="./tiles/green/T.svg" width="20" /><img src="./tiles/yellow/T.svg" width="20" /><img src="./tiles/green/E.svg" width="20" />
+
+This doesn't make a lot of sense, because it implies that there is another "T" somewhere, but there is nowhere to place it. Instead, the schema should look like this:
+
+<img src="./tiles/green/L.svg" width="20" /><img src="./tiles/green/A.svg" width="20" /><img src="./tiles/green/T.svg" width="20" /><img src="./tiles/grey/T.svg" width="20" /><img src="./tiles/green/E.svg" width="20" />
+
+To do this, we have to check for a few other conditions, such as how many times the letter appears in the wordle word, and if those letters are already in the correct place. We only want to show yellow tiles if there is still a remaining spot that is missing that letter (not green).
+
+For example, when using the wordle word "TEACH" and the guess "LATTE". We do want both "T" in latte to be yellow, because both of those locations for "T" are not correct in LATTE, but there is a "T" in TEACH.
+
+To help track this, I use a variable `schema_key` which is just a list that tracks "G" for green (meaning a green tile is there), "Y" for yellow, and "B" for gray (green also starts with G, so I went with B for black).
+
+-> Check for all of the Greens
+
+First I will loop through the guess and place all of the greens into the schema. I store the schema as a list so I can easily insert into the index they belong in. I insert the image for the wordle tile into the schema list, update the keyboard letter tile to be green, and set the schema key to "G" at that index. This information will be helpful later when determining yellow tiles.
+
+-> Check for Yellows and Grays
+
+I then loop through the guess again to determine gray and yellow tiles. As I mentioned before, gray is easy as it is a conditional check to see if the letter is not in the word. If it's not, I add the image for the gray tile to the schema list, turn the keyboard letter to gray, and update the schema key to "B" for that index.
+
+If the letter is in the word, and it's not the correct letter for that spot (i.e. it could be yellow), I will find all of the indexes where the letter is found in the wordle word. I do this by using the `.count()` method on the wordle word, and then looping the amount of times the letter is found. In this loop, I will use the `.find()` method to determine where the nearest index to the start that is the letter is, and store that index. Because `.find()` will only find the first index of the letter, I replace that instance of the letter with a `+` so that the next time through the loop will find the next index of the letter.
+
+Now that we have a list of all the indexes where the letter is found in the wordle word we want to count how many of those indexes are green (have the correct letter in the guess for the wordle word). To do this, I loop through the list of indexes and see if the `schema_key` has `"G"` at that index. If it does, I add one to my `found_green_letter_count`.
+
+If we have more instances of the letter than we found green, we know we want this instance of the letter to be yellow (there are still more places to put the letter, but this place isn't right). So, we will add the yellow tile image to the schema. However, if there are any green instances of the letter, we want the keyboard to show it as green. So we will check if the letter schema already shows green and/or if the current guess already has a green for this letter. If both of those are not true, we can turn the keyboard yellow for this letter.
+
+If the number of occurances of the letter in the word, and the number of greens we have are equal, then we have found all of the locations for that letter! Since this letter is not in the right place, and there are no missing locations for it, it should show gray in this schema, and the keyboard should show green for the letter.
+
+-> Finish up and reformat
+
+Now that the schema is fully built, we want to turn the schema into a string, and add "</br>" so it will properly show in the readme!
 
 #### 📄 `game_data.py`
 
