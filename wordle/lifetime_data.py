@@ -3,7 +3,7 @@ lifetime_data = {
     "games_played": 11,
     "players": 7,
     "wins": 10,
-    "loses": 1,
+    "losses": 1,
     "invalid_guesses": 4,
     "words_guessed": {
         "UNDER": 1,

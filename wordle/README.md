@@ -2,7 +2,7 @@
 
 Welcome to the ReadMe! If you have any questions about anything in here, please feel free to reach out - [jordanbott.dev@gmail.com](jordanbott.dev@gmail.com)
 
-If you've played, you've probably noticed that my version of wordle doesn't play quite like the [NYT version](https://www.nytimes.com/games/wordle/index.html) does. Rather than everyone in the world playing their own game with the same word, everyone plays in the same game, and plays one move at a time. Players are welcomed to make multiple moves in a row, or play one move and wait for the community to continue the game. Unlike the NTY wordle, every time a game completes, a new word is ready! Player and global stats are tracked, and can be found by looking at the [PLAYER STATS](./wordle/stat_sheets/PlayerData.md) and the [GLOBAL STATS](./wordle/stat_sheets/GlobalData.md). Only the player's github username is stored with their play stats.
+If you've played, you've probably noticed that my version of wordle doesn't play quite like the [NYT version](https://www.nytimes.com/games/wordle/index.html) does. Rather than everyone in the world playing their own game with the same word, everyone plays in the same game, and plays one move at a time. Players are welcomed to make multiple moves in a row, or play one move and wait for the community to continue the game. Unlike the NTY wordle, every time a game completes, a new word is ready! Player and global stats are tracked, and can be found by looking at the [PLAYER STATS](./stat_sheets/PlayerData.md) and the [GLOBAL STATS](./stat_sheets/GlobalData.md). Only the player's github username is stored with their play stats.
 
 ## Overview
 
@@ -20,7 +20,7 @@ From a high level, the flow of the game is relatively straight forward:
     - [Python Code (Game Logic)](#python-code-game-logic)
 2. [Future of Project](#future-of-project)
     - [Feature Ideas](#feature-ideas)
-    - [Bugs to Fix](#bugs-to-fix)
+    - [Bugs](#bugs-🐛🐞🐜)
 3. [Acknowledgements](#acknowledgements)
 
 
@@ -52,7 +52,9 @@ Finally, the `Close Issue` step will close the issue that was opened and trigger
 
 ### Python Code (Game Logic)
 
-There are multiple python files used in this project (18 of them!), however only `main.py` is triggered by the workflow. I view `main.py` like a control center. It is taking in data and deciding where it should go - what path it should follow. To keep this file more succinct and easy to read, `main.py` calls functions in other files to handle specific steps in the process. Below I will go through the functions/uses of each file individually:
+There are multiple python files used in this project (18 of them!), however only `main.py` is triggered by the workflow. I view `main.py` like a control center. It is taking in data and deciding where it should go - what path it should follow. To keep this file more succinct and easy to read, `main.py` calls functions in other files to handle specific steps in the process. Below I will go through the functions/uses of each file individually.
+
+⚠️ With the excpetion of `main.py` all files are discussed in alphabetical order (how they appear in the file tree), and are not in the order they are triggered or accessed by `main.py`.
 
 Feel free to skip to a specific file's explanation here:
 |   |   |   |
@@ -144,6 +146,8 @@ After these 4 checks, the code knows the word is a valid guess! `check_word_vali
 
 #### 📄 `create_schema.py`
 
+You can view `create_schema.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/create_schema.py).
+
 This file contains the most complex logic of the whole project, as it is what determines if a letter should be yellow, green, or gray. At first, I thought this was pretty straight forward. If the letter matches the letter in that spot, it's green (`guess[i] == wordle_word[i]`). The greens are nice and straight forward like this! The grays are also straight forward. If the letter cannot be found anywhere in the wordle word (`letter not in wordle_word`), the letter should be gray.
 
 The logic of the yellows gets a bit more complex. Originally I thought if the letter is somewhere in the wordle word, and it is not in that spot (`guess[i] != wordle_word[i] and guess[i] in wordle_word`) then the letter should be yellow. However let's consider the following scenario:
@@ -188,6 +192,8 @@ Now that the schema is fully built, we want to turn the schema into a string, an
 
 #### 📄 `game_data.py`
 
+You can view `game_data.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/game_data.py).
+
 I have several files in this repo that keep track of data long term. There were a few ways to do this (json, yml, md, etc.), but I decided to keep it in pure python. The purpose of `game_data.py` is to keep track of the current game's data. This is important as the script is ran every time that there is a new guess, if we didn't track the index of the wordle word, the schema, and some other key items the game would "reset" every time there was a new guess - which is not the behavior that we want.
 
 `game_data.py` contains only a dictionary called `game_data` that keeps track of the following data:
@@ -205,35 +211,68 @@ I have several files in this repo that keep track of data long term. There were 
 - `letter_schema` (list)
     - The letter schema is what is used to produce the keyboard next to the game that displays if a particular letter has is green/yellow/gray/unguessed in the game. The letter schema is edited in [`create_schema.py`](#📄-create_schemapy).
 
-All of the game data is then written to the `game_data.py` file in [`main.py`](#📄-mainpy) after all of the `updated_game_data` has been correctly updated for the current guess.
 
 #### 📄 `handle_global_stats.py`
 
-*coming soon!*
+You can view `handle_global_stats.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/handle_global_stats.py).
+
+This file has one function `handle_global_stats()`, and handles updating the [`GlobalData.md`](./stat_sheets/GlobalData.md) file. The file is relatively straight forward, simply parsing information from [`lifetime_data`](#📄-lifetime_datapy) into a table inside of a string to write into the GlobalData file. There is also a `for` loop to determine the most guessed word.
 
 #### 📄 `handle_invalid_guess.py`
 
-*coming soon!*
+You can view `handle_invalid_guess.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/handle_invalid_guess.py)
+
+This file will update the readme with the "invalid guess" look if a guess is determined to be invalid by [`check_word_validity.py`](#📄-check_word_validitypy). The file edits the user's username to fit the shield url requirements ("-" should be "--", "_" should be "__") and joins the `letter_schema` from `game_data` into a string to display on the readme. The file then rewrites the readme with the new content. If triggered, this is returned from `main.py` and thus ends the python section of code.
 
 #### 📄 `handle_lose.py`
 
-*coming soon!*
+You can view `handle_lose.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/handle_lose.py).
+
+This file is triggered when the game has hit 6 guesses, and the wordle word has not been guessed. The file edits the user's username to fit the shield url requirements ("-" should be "--", "_" should be "__") and joins the `letter_schema` from `game_data` into a string to display on the readme. The file then rewrites the readme with the new content specifying that the game has been lost. Finally it runs [`new_game_data.py`](#📄-new_game_datapy). If triggered, this is returned from `main.py` and thus `new_game_data.py` ends the python section of code.
 
 #### 📄 `handle_player_stats.py`
 
-*coming soon!*
+You can view `handle_player_stats.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/handle_player_stats.py).
+
+This file is used to create the [Player Data Stat Sheet](./stat_sheets/PlayerData.md). It has one function `handle_player_stats()` which uses a `for` loop to build a string that is then displayed in the markdown file. After creating the table in the `table_content` string it will rewrite the `PlayerData.md` file to include the new table. Because of this, after every move the entire `PlayerData.md` table is recreated and rewritten.
 
 #### 📄 `handle_win.py`
 
-*coming soon!*
+You can view `handle_win.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/handle_win.py).
+
+This file is triggered when the wordle word has been guessed. The file edits the user's username to fit the shield url requirements ("-" should be "--", "_" should be "__") and joins the `letter_schema` from `game_data` into a string to display on the readme. The file then rewrites the readme with the new content specifying that the game has been won. Finally it runs [`new_game_data.py`](#📄-new_game_datapy). If triggered, this is returned from `main.py` and thus `new_game_data.py` ends the python section of code.
 
 #### 📄 `letter_indicies.py`
 
-*coming soon!*
+You can view `letter_indicies.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/letter_indicies.py).
+
+This file is very simple. It is holding a dictionary that does not change of what index each of the letters can be found at for the letter schema. This is so that the letters in the `letter_schema` can be in QWERTY order, and I can include `<br / >` tags appropriately. This file is used in [`create_schema.py`](#📄-create_schemapy) to know which item in the `letter_schema` list to change when looking at each letter of the guess.
 
 #### 📄 `lifetime_data.py`
 
-*coming soon!*
+You can view `lifetime_data.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/lifetime_data.py).
+
+`lifetime_data.py` is one of 3 files in this repo that are used to track data long term (see also: [`game_data.py](#📄-game_datapy) and [`player_data.py`](#📄-player_datapy)). Long term meaning, longer than the run time of the script. In this file, we are tracking "all time" stats. These are not specific to any one player or any one game, and serve as a culmination of all guesses and games. Stats have been tracked since March 10, 2024.
+
+This file contains a dictionary called `lifetime_data` and it tracks the following information:
+
+- `moves_made` (integer)
+    - This is the total moves (guesses) made.
+- `games_played` (integer)
+    - Total completed games
+- `players` (integer)
+    - Total *unique* players participated
+- `wins` (integer)
+    - Total number of games played resulting in a win
+- `losses` (integer)
+    - Total number of games played resulting in a loss
+- `invalid_guesses` (integer)
+    - Total number of invalid guesses made
+- `words_guessed` (dictionary)
+    - A dictionary of all guessed words as the key, and the number of times they have been guessed as the value. This is used to determine the most guessed word.
+- `wordle_words` (list)
+    - This list tracks all past wordle words, in order.
+
 
 #### 📄 `new_game_data.py`
 
@@ -275,11 +314,11 @@ In this section I will share any future feature ideas that I have, as well as an
 - Further error handling to update the ReadMe should something bad happen in the workflow
 - Email sent to players who have participated after the game is complete
 
-### Bugs to Fix
+### Bugs 🐛🐞🐜
 
 - ✅ Solved: Letters that exist in the word in more than one location do not display properly.
     - Ex. In the guess "latte" for the word "lathe", you will see a schema like this: 🟩🟩🟩🟨🟩 .<br /> However, the second `t` should be black as the `t` has been placed, and there are not two `t` in the word.
 
 ## Acknowledgements
-- My idea for this project came from seeing [Jonathan Gin's](https://github.com/JonathanGin52) connect4 game 🎲
+- My idea for this project came from seeing [Jonathan Gin's](https://github.com/JonathanGin52) epic connect4 game 🎲
 - A list of other cool GitHub profiles can be found [here](https://github.com/abhisheknaiidu/awesome-github-profile-readme?tab=readme-ov-file)!

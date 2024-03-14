@@ -35,7 +35,7 @@ def update_lifetime_data(
             updated_lifetime_data["wordle_words"].append(wordle_word)
 
         if is_lose:
-            updated_lifetime_data["loses"] += 1
+            updated_lifetime_data["losses"] += 1
             updated_lifetime_data["wordle_words"].append(wordle_word)
 
     lifetime_data_file = open("wordle/lifetime_data.py", "w")
