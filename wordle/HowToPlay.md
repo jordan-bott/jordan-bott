@@ -1,7 +1,7 @@
 # Welcome to <img src="./tiles/yellow/W.svg" width="28" /><img src="./tiles/green/O.svg" width="28" /><img src="./tiles/grey/R.svg" width="28" /><img src="./tiles/grey/D.svg" width="28" /><img src="./tiles/green/L.svg" width="28" /><img src="./tiles/grey/E.svg" width="28" /> !
 
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > If you have played the [NYT version](https://www.nytimes.com/games/wordle/index.html) of Wordle, this game has a few key differences. Please check out the [Special Rules](#special-rules)!
 > If you've never played the NYT version of Wordle you are also in the right place! Keep reading.
 
