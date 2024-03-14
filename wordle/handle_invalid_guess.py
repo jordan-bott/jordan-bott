@@ -49,6 +49,8 @@ Whoops! The last guess made was **invalid**.
 
 Do you love stats? Check out these: &ensp; [![Static Badge](https://img.shields.io/badge/PLAYER%20STATS-darkseagreen?style=flat)](./wordle/stat_sheets/PlayerData.md) &nbsp;  [![Static Badge](https://img.shields.io/badge/GLOBAL%20STATS-darkseagreen?style=flat)](./wordle/stat_sheets/GlobalData.md)
 
+Curious how everything is working? Check out the &ensp; [![Static Badge](https://img.shields.io/badge/README-darkseagreen?style=flat)](./wordle/README.md)
+
 """
 
     file = open("README.md", "w")
