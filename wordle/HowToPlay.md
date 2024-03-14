@@ -19,7 +19,7 @@ The game of Wordle is relatively simple. The premise of the game is to try to gu
 
 Let's say the wordle word is `SPLAT`, and you guess `PLANT`. Here is what the guess will look like:
 
-<img src="./tiles/yellow/P.svg" width="20" /><img src="./tiles/yellow/L.svg" width="20" /><img src="./tiles/yellow/A.svg" width="20" /><img src="./tiles/grey/N.svg" width="20" /><img src="./tiles/green/T.svg" width="20" />
+<img src="./tiles/yellow/P.svg" width="30" /><img src="./tiles/yellow/L.svg" width="30" /><img src="./tiles/yellow/A.svg" width="30" /><img src="./tiles/grey/N.svg" width="30" /><img src="./tiles/green/T.svg" width="30" />
 
 So, here's what we know:
 
@@ -37,19 +37,19 @@ That's the basic premise of Wordle! At this point, you are basically ready to pl
 
 Let's say the word is `GROWL` and we guess the word `BULLY`. Here's what that guess will look like:
 
-<img src="./tiles/grey/B.svg" width="20" /><img src="./tiles/grey/U.svg" width="20" /><img src="./tiles/yellow/L.svg" width="20" /><img src="./tiles/yellow/L.svg" width="20" /><img src="./tiles/grey/Y.svg" width="20" />
+<img src="./tiles/grey/B.svg" width="30" /><img src="./tiles/grey/U.svg" width="30" /><img src="./tiles/yellow/L.svg" width="30" /><img src="./tiles/yellow/L.svg" width="30" /><img src="./tiles/grey/Y.svg" width="30" />
 
 In this case there _is_ an `L` in the wordle word (in the 5th spot), but we guessed a word with `L` in the 3rd and 4th spot. The game will show _both_ `L` as yellow, to show you that the `L` is not found in either spot we guessed. **This does not necessarily mean there are _2_ `L` in the word**.
 
 Let's say the word is `APPLE` and we guess `SILLY`. Here's what that guess will look like:
 
-<img src="./tiles/grey/S.svg" width="20" /><img src="./tiles/grey/I.svg" width="20" /><img src="./tiles/grey/L.svg" width="20" /><img src="./tiles/green/L.svg" width="20" /><img src="./tiles/grey/Y.svg" width="20" />
+<img src="./tiles/grey/S.svg" width="30" /><img src="./tiles/grey/I.svg" width="30" /><img src="./tiles/grey/L.svg" width="30" /><img src="./tiles/green/L.svg" width="30" /><img src="./tiles/grey/Y.svg" width="30" />
 
 In this case, our guess still has 2 `L`, however we have correctly found the location of 1 of the `L`, and there **is not** 2 `L` in the guess. So, the `L` that is in the wrong location will display as gray, while the correct `L` (4th position) will display as green.
 
 Let's say the word is `BELLY` and we guess `HOLLY`. Here's what that guess will look like:
 
-<img src="./tiles/grey/H.svg" width="20" /><img src="./tiles/grey/O.svg" width="20" /><img src="./tiles/green/L.svg" width="20" /><img src="./tiles/green/L.svg" width="20" /><img src="./tiles/green/Y.svg" width="20" />
+<img src="./tiles/grey/H.svg" width="30" /><img src="./tiles/grey/O.svg" width="30" /><img src="./tiles/green/L.svg" width="30" /><img src="./tiles/green/L.svg" width="30" /><img src="./tiles/green/Y.svg" width="30" />
 
 In this case our guess, `HOLLY` has 2 `L`, and the word, `BELLY` also has 2 `L` in the same location. So in this case, it will display both `L` as green.
 
@@ -57,13 +57,13 @@ In this case our guess, `HOLLY` has 2 `L`, and the word, `BELLY` also has 2 `L` 
 
 Let's say the word is `HAPPY` and we guess `ELOPE`. Here's what that guess would look like:
 
-<img src="./tiles/grey/E.svg" width="20" /><img src="./tiles/grey/L.svg" width="20" /><img src="./tiles/grey/O.svg" width="20" /><img src="./tiles/green/P.svg" width="20" /><img src="./tiles/grey/E.svg" width="20" />
+<img src="./tiles/grey/E.svg" width="30" /><img src="./tiles/grey/L.svg" width="30" /><img src="./tiles/grey/O.svg" width="30" /><img src="./tiles/green/P.svg" width="30" /><img src="./tiles/grey/E.svg" width="30" />
 
 In this case, we found the correct location for _one_ of the `P` in `HAPPY` (the 4th position). However, the game gives no indication if that is the **_only_** instance of that letter. You'll have to make your best guess for that one!
 
 Let's say the word is `SKILL` and we guess `LABEL`. Here's what that guess would look like:
 
-<img src="./tiles/yellow/L.svg" width="20" /><img src="./tiles/grey/A.svg" width="20" /><img src="./tiles/grey/B.svg" width="20" /><img src="./tiles/grey/E.svg" width="20" /><img src="./tiles/green/L.svg" width="20" />
+<img src="./tiles/yellow/L.svg" width="30" /><img src="./tiles/grey/A.svg" width="30" /><img src="./tiles/grey/B.svg" width="30" /><img src="./tiles/grey/E.svg" width="30" /><img src="./tiles/green/L.svg" width="30" />
 
 In this case, one `L` in `LABEL` (first position) is yellow, and the other `L` (5th position) is green. This means there is _at least_ 2 `L` in the Wordle word - one in the 5th position, and one in the 2nd, 3rd or 4th position.
 
