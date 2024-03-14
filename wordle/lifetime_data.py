@@ -1,5 +1,5 @@
 lifetime_data = {
-    "moves_made": 64,
+    "moves_made": 65,
     "games_played": 12,
     "players": 8,
     "wins": 11,
@@ -54,7 +54,7 @@ lifetime_data = {
         "APPLE": 1,
         "LABEL": 1,
         "BAGEL": 1,
-        "SNOWY": 1,
+        "SNOWY": 2,
         "FLICK": 1,
         "BRICK": 1,
         "CHICK": 1,

@@ -101,11 +101,11 @@ player_data = {
         },
     },
     "JohnathanNiles": {
-        "total_moves": 2,
+        "total_moves": 3,
         "total_winning_moves": 1,
         "total_invalid_guesses": 0,
         "first_move_made": "2024-03-14",
         "most_recent_move": "2024-03-14",
-        "guess_history": {"NASTY": 1, "SANDY": 1},
+        "guess_history": {"NASTY": 1, "SANDY": 1, "SNOWY": 1},
     },
 }
