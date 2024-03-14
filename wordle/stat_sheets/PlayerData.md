@@ -10,4 +10,4 @@
 | [angelajfisher](https://github.com/angelajfisher) | 6 | 1 | 0 | March 12, 2024 | March 12, 2024 | GROWN (1 times!) |
 | [JohnathanNiles](https://github.com/JohnathanNiles) | 5 | 2 | 0 | March 14, 2024 | March 14, 2024 | HOVER (1 times!) |
 | [Deafsnivz](https://github.com/Deafsnivz) | 1 | 0 | 0 | March 14, 2024 | March 14, 2024 | AUDIO (1 times!) |
-| [thejoshchow](https://github.com/thejoshchow) | 2 | 0 | 0 | March 14, 2024 | March 14, 2024 | FROGS (1 times!) |
+| [thejoshchow](https://github.com/thejoshchow) | 3 | 1 | 0 | March 14, 2024 | March 14, 2024 | GLOSS (1 times!) |

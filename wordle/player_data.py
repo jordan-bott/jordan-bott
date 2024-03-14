@@ -117,11 +117,11 @@ player_data = {
         "guess_history": {"AUDIO": 1},
     },
     "thejoshchow": {
-        "total_moves": 2,
-        "total_winning_moves": 0,
+        "total_moves": 3,
+        "total_winning_moves": 1,
         "total_invalid_guesses": 0,
         "first_move_made": "2024-03-14",
         "most_recent_move": "2024-03-14",
-        "guess_history": {"CLOSE": 1, "FROGS": 1},
+        "guess_history": {"CLOSE": 1, "FROGS": 1, "GLOSS": 1},
     },
 }
