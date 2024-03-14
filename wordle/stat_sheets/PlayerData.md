@@ -9,3 +9,4 @@
 | [KamronP23](https://github.com/KamronP23) | 1 | 0 | 0 | March 11, 2024 | March 11, 2024 | SWEAR (1 times!) |
 | [angelajfisher](https://github.com/angelajfisher) | 6 | 1 | 0 | March 12, 2024 | March 12, 2024 | GROWN (1 times!) |
 | [JohnathanNiles](https://github.com/JohnathanNiles) | 5 | 2 | 0 | March 14, 2024 | March 14, 2024 | HOVER (1 times!) |
+| [Deafsnivz](https://github.com/Deafsnivz) | 1 | 0 | 0 | March 14, 2024 | March 14, 2024 | AUDIO (1 times!) |

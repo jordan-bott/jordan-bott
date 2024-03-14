@@ -108,4 +108,12 @@ player_data = {
         "most_recent_move": "2024-03-14",
         "guess_history": {"NASTY": 1, "SANDY": 1, "SNOWY": 1, "OVERT": 1, "HOVER": 1},
     },
+    "Deafsnivz": {
+        "total_moves": 1,
+        "total_winning_moves": 0,
+        "total_invalid_guesses": 0,
+        "first_move_made": "2024-03-14",
+        "most_recent_move": "2024-03-14",
+        "guess_history": {"AUDIO": 1},
+    },
 }
