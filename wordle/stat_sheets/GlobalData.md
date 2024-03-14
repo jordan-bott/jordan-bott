@@ -1,9 +1,9 @@
 |              |                |
 | ---------------- | ----------------------------- |
-| Total Moves Made | 63 |
-| Total Games Played | 11 |
+| Total Moves Made | 64 |
+| Total Games Played | 12 |
 | Total Players Participated | 8 |
-| Total Wins | 10 |
+| Total Wins | 11 |
 | Total Losses | 1 |
 | Total Invalid Guesses | 4 |
 | Most Guessed Word | PLANT (4 times!) |
