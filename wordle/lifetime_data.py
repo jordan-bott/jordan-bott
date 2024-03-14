@@ -1,7 +1,7 @@
 lifetime_data = {
-    "moves_made": 62,
+    "moves_made": 63,
     "games_played": 11,
-    "players": 7,
+    "players": 8,
     "wins": 10,
     "losses": 1,
     "invalid_guesses": 4,
@@ -58,6 +58,7 @@ lifetime_data = {
         "FLICK": 1,
         "BRICK": 1,
         "CHICK": 1,
+        "NASTY": 1,
     },
     "wordle_words": [
         "EASEL",
