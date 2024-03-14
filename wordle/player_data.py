@@ -1,16 +1,16 @@
 player_data = {
     "jordan-bott": {
-        "total_moves": 37,
+        "total_moves": 38,
         "total_winning_moves": 6,
         "total_invalid_guesses": 3,
         "first_move_made": "2024-03-10",
-        "most_recent_move": "2024-03-13",
+        "most_recent_move": "2024-03-14",
         "guess_history": {
             "UNDER": 1,
             "QUEER": 1,
             "QUITE": 1,
             "QUICK": 2,
-            "CRANE": 2,
+            "CRANE": 3,
             "FEARS": 1,
             "PLANT": 4,
             "TALLY": 1,
