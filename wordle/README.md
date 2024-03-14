@@ -276,11 +276,17 @@ This file contains a dictionary called `lifetime_data` and it tracks the followi
 
 #### 📄 `new_game_data.py`
 
-*coming soon!*
+You can view `new_game_data.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/new_game_data.py).
+
+This file contains one function `new_game_data()`. The purpose of `new_game_data()` is to reset the game data back to the "new" state after a game has concluded. This is called by [`handle_win.py`](#📄-handle_winpy) and [`handle_lose.py`](#📄-handle_losepy) to ready [`game_data.py`](#📄-game_datapy) for a new game!
+
+It contains a dictionary `game_data` with the "reset" or "new" game data, and then rewrites [`game_data.py`](#📄-game_datapy) with this dictionary.
 
 #### 📄 `new_letter_schema.py`
 
-*coming soon!*
+You can view `new_letter_schema.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/new_letter_schema.py).
+
+This file just contains one list called `new_letter_schema`, which is a list of all the keyboard letter images in white (their default "new game" state). This list is used by [`new_game_data.py`](#📄-new_game_datapy) to give [`game_data.py`](#📄-game_datapy) a reset keyboard for the new game.
 
 #### 📄 `player_data.py`
 
