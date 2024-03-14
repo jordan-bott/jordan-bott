@@ -1,4 +1,4 @@
-# Asynchronous/Collaborative Wordle!
+# Collaborative Wordle!
 
 Welcome to the ReadMe! If you have any questions about anything in here, please feel free to reach out - [jordanbott.dev@gmail.com](jordanbott.dev@gmail.com)
 
@@ -222,13 +222,13 @@ This file has one function `handle_global_stats()`, and handles updating the [`G
 
 You can view `handle_invalid_guess.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/handle_invalid_guess.py)
 
-This file will update the readme with the "invalid guess" look if a guess is determined to be invalid by [`check_word_validity.py`](#📄-check_word_validitypy). The file edits the user's username to fit the shield url requirements ("-" should be "--", "_" should be "__") and joins the `letter_schema` from `game_data` into a string to display on the readme. The file then rewrites the readme with the new content. If triggered, this is returned from `main.py` and thus ends the python section of code.
+This file will update the readme with the "invalid guess" look if a guess is determined to be invalid by [`check_word_validity.py`](#📄-check_word_validitypy). The file edits the user's username to fit the shield url requirements ("-" should be "--", "_" should be "__") and joins the `letter_schema` from `game_data` into a string to display on the readme. The file then rewrites the readme with the new content. If triggered, this is returned from `main.py` and thus ends the python section of the workflow, and the GitHub workflow moves to the next step.
 
 #### 📄 `handle_lose.py`
 
 You can view `handle_lose.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/handle_lose.py).
 
-This file is triggered when the game has hit 6 guesses, and the wordle word has not been guessed. The file edits the user's username to fit the shield url requirements ("-" should be "--", "_" should be "__") and joins the `letter_schema` from `game_data` into a string to display on the readme. The file then rewrites the readme with the new content specifying that the game has been lost. Finally it runs [`new_game_data.py`](#📄-new_game_datapy). If triggered, this is returned from `main.py` and thus `new_game_data.py` ends the python section of code.
+This file is triggered when the game has hit 6 guesses, and the wordle word has not been guessed. The file edits the user's username to fit the shield url requirements ("-" should be "--", "_" should be "__") and joins the `letter_schema` from `game_data` into a string to display on the readme. The file then rewrites the readme with the new content specifying that the game has been lost. Finally it runs [`new_game_data.py`](#📄-new_game_datapy). If triggered, this is returned from `main.py` and thus `new_game_data.py` ends the python section of the workflow, and the GitHub workflow moves to the next step.
 
 #### 📄 `handle_player_stats.py`
 
@@ -240,7 +240,7 @@ This file is used to create the [Player Data Stat Sheet](./stat_sheets/PlayerDat
 
 You can view `handle_win.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/handle_win.py).
 
-This file is triggered when the wordle word has been guessed. The file edits the user's username to fit the shield url requirements ("-" should be "--", "_" should be "__") and joins the `letter_schema` from `game_data` into a string to display on the readme. The file then rewrites the readme with the new content specifying that the game has been won. Finally it runs [`new_game_data.py`](#📄-new_game_datapy). If triggered, this is returned from `main.py` and thus `new_game_data.py` ends the python section of code.
+This file is triggered when the wordle word has been guessed. The file edits the user's username to fit the shield url requirements ("-" should be "--", "_" should be "__") and joins the `letter_schema` from `game_data` into a string to display on the readme. The file then rewrites the readme with the new content specifying that the game has been won. Finally it runs [`new_game_data.py`](#📄-new_game_datapy). If triggered, this is returned from `main.py` and thus `new_game_data.py` ends the python section of the workflow, and the GitHub workflow moves to the next step.
 
 #### 📄 `letter_indicies.py`
 
@@ -286,27 +286,71 @@ It contains a dictionary `game_data` with the "reset" or "new" game data, and th
 
 You can view `new_letter_schema.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/new_letter_schema.py).
 
-This file just contains one list called `new_letter_schema`, which is a list of all the keyboard letter images in white (their default "new game" state). This list is used by [`new_game_data.py`](#📄-new_game_datapy) to give [`game_data.py`](#📄-game_datapy) a reset keyboard for the new game.
+This file contains one list called `new_letter_schema`, which is a list of all the keyboard letter images in white (their default "new game" state). This list is used by [`new_game_data.py`](#📄-new_game_datapy) to give [`game_data.py`](#📄-game_datapy) a reset keyboard for the new game.
 
 #### 📄 `player_data.py`
 
-*coming soon!*
+You can view `player_data.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/player_data.py)
+
+This file contains on dictionary that tracks all player data from all played guesses. Each key in the dictionary is a player's GitHub username, and the value is another dictionary with the following information:
+
+- `total_moves` (integer)
+    - The total guesses made by this player
+- `total_winning_moves` (integer)
+    - The total guesses made by this player that resulted in a win
+- `total_invalid_guesses` (integer)
+    - The total guesses made by this player that were invalid
+- `first_move_made` (date/string)
+    - The date of the first guess ever made by this player
+- `most_recent_move` (date/string)
+    - The date of the most recent guess made by this player
+- `guess_history` (dictionary)
+    - The key is the word guessed, and the values are how many times that word has been guessed by this player
 
 #### 📄 `possible_words.py`
 
-*coming soon!*
+You can view `possible_words.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/possible_words.py).
+
+This file contains the function `possible_words()` which returns a list of all possible wordle words. This is used by `main.py` to grab the current wordle word based off of the index stored in [`game_data.py`](#📄-game_datapy). `possible_words()` gets the list of possible words as one string that is stored in a GitHub environment variable to deter cheating. This way the list of words is found no where in the code, and the only publicly stored reference to the wordle word is the index of the word in this hidden list.
 
 #### 📄 `update_lifetime_data.py`
 
-*coming soon!*
+You can view `update_lifetime_data.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/update_lifetime_data.py).
+
+This file contains one function `update_lifetime_data()` that's purpose is to update the [`lifetime_data.py`](#📄-lifetime_datapy) file with the information from the latest guess.
+
+`update_lifetime_data()` takes in 4 positional arguments, and 3 optional key word arguments. All of the arguments aside from `guess` and `wordle_word` are `True`/`False` to determine which pieces of information should be updated.
+
+After working through conditional statements to correctly update information [`lifetime_data.py`](#📄-lifetime_datapy) is rewritten with the updated information.
+
+Finally it runs [`handle_global_stats()`](#📄-handle_global_statspy) so that [`GlobalData.md](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/stat_sheets/GlobalData.md) will be properly updated as well.
 
 #### 📄 `update_player_data.py`
 
-*coming soon!*
+You can view `update_player_data.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/update_player_data.py).
+
+This file contains one function `update_player_data()`. The purpose of this function is to update the [`player_data.py`](#📄-player_datapy) file with the correct information after a guess is made.
+
+`update_player_data()` takes in 3 positional arguments, and 1 optional keyword argument.
+
+- `player`
+    - The username of the player who made the current guess
+- `guess`
+    - The guess made this turn (string)
+- `is_win`
+    - A boolean that is `True` if this is a winning guess, and `False` for all other non-winning guesses.
+- `is_valid` (optional keyword argument, default is `True`)
+    - A boolean that is `True` if the guess is valid (and also by default), and `False` if the current guess was invalid
+
+After going through conditional statements to update the current player data (stored in `updated_player_data` variable) it rewrites the contents of [`player_data.py`](#📄-player_datapy) with the updated information.
+
+Finally, it runs [`handle_player_stats()`](#📄-handle_player_statspy) so that [`PlayerData.md`](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/stat_sheets/PlayerData.md) will also be updated.
 
 #### 📄 `update_readme.py`
 
-*coming soon!*
+You can view `update_readme.py` [here](https://github.com/jordan-bott/jordan-bott/blob/main/wordle/update_readme.py).
+
+This file contains one function, `update_readme()` which is ran in `main.py` when a guess is valid, but does not result in a win or a loss. The purpose of `update_readme()` is to update the main readme (found [here](https://github.com/jordan-bott)) with the updated game. The function edits the user's username to fit the shield url requirements ("-" should be "--", "_" should be "__") and joins the `letter_schema` from `game_data` into a string to display on the readme. Then the readme is rewritten with the new information. This is the end of the `main.py` script, thus is the end of the script. After the function finishes the python section of the workflow is complete, and the GitHub workflow continues to the next step.
 
 ## Future of Project
 
