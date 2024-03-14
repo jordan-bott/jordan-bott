@@ -35,6 +35,8 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 > [!TIP]
 > Everyone is welcome to participate! This is an **asynchronous**, and **collaborative** version of wordle, where players make one move at a time. Please make as many or as few moves as you would like!
 
+Is this your first time here? Check out &ensp; [![Static Badge](https://img.shields.io/badge/HOW%20TO%20PLAY-darkseagreen?style=flat)](./wordle/HowToPlay.md)
+
 We won! 🎉 The word was: {wordle_word}
 
 Click "start a new game" to play again! ⬇️

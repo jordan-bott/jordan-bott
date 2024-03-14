@@ -29,6 +29,8 @@ Text         6 mins          ░░░░░░░░░░░░░░░░░
 > [!TIP]
 > Everyone is welcome to participate! This is an **asynchronous**, and **collaborative** version of wordle, where players make one move at a time. Please make as many or as few moves as you would like!
 
+Is this your first time here? Check out &ensp; [![Static Badge](https://img.shields.io/badge/HOW%20TO%20PLAY-darkseagreen?style=flat)](./wordle/HowToPlay.md)
+
 Click "make a guess" below to contribute. ⬇️
 
 [![Static Badge](https://img.shields.io/badge/MAKE%20A%20GUESS-mediumpurple?style=flat)](https://github.com/jordan-bott/jordan-bott/issues/new?assignees=&labels=&projects=&template=wordle_guess.md&title=wordleguess%7C%5BPUT+5+LETTER+WORD+HERE%5D)
