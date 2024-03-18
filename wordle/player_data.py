@@ -133,11 +133,11 @@ player_data = {
         "guess_history": {"SNAKE": 1},
     },
     "dreramirez91": {
-        "total_moves": 1,
+        "total_moves": 2,
         "total_winning_moves": 0,
         "total_invalid_guesses": 0,
         "first_move_made": "2024-03-18",
         "most_recent_move": "2024-03-18",
-        "guess_history": {"AUDIO": 1},
+        "guess_history": {"AUDIO": 1, "SHADE": 1},
     },
 }
