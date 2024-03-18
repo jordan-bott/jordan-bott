@@ -1,7 +1,7 @@
 lifetime_data = {
-    "moves_made": 72,
+    "moves_made": 73,
     "games_played": 14,
-    "players": 11,
+    "players": 12,
     "wins": 13,
     "losses": 1,
     "invalid_guesses": 4,
@@ -62,7 +62,7 @@ lifetime_data = {
         "SANDY": 1,
         "OVERT": 1,
         "HOVER": 1,
-        "AUDIO": 1,
+        "AUDIO": 2,
         "CLOSE": 1,
         "FROGS": 1,
         "GLOSS": 1,
