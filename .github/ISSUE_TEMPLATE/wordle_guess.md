@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-We are ready for your guess! Simply place your 5 letter word guess in between the two brackets in the title. Please do not change the rest of the title.
+We are ready for your guess! Simply place your 5 letter word guess in between the two brackets in the title and hit "Submit new issue". Please do not change the rest of the title.
 
 Example:
 
