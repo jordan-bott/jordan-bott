@@ -13,4 +13,4 @@
 | [thejoshchow](https://github.com/thejoshchow) | 3 | 1 | 0 | March 14, 2024 | March 14, 2024 | GLOSS (1 times!) |
 | [amypirro](https://github.com/amypirro) | 1 | 0 | 0 | March 15, 2024 | March 15, 2024 | SNAKE (1 times!) |
 | [dreramirez91](https://github.com/dreramirez91) | 3 | 1 | 0 | March 18, 2024 | March 18, 2024 | SPADE (1 times!) |
-| [aleetaing](https://github.com/aleetaing) | 3 | 0 | 0 | March 19, 2024 | March 19, 2024 | DRAMA (1 times!) |
+| [aleetaing](https://github.com/aleetaing) | 4 | 1 | 0 | March 19, 2024 | March 19, 2024 | DRANK (1 times!) |
