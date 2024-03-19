@@ -141,11 +141,11 @@ player_data = {
         "guess_history": {"AUDIO": 1, "SHADE": 1, "SPADE": 1},
     },
     "aleetaing": {
-        "total_moves": 1,
+        "total_moves": 2,
         "total_winning_moves": 0,
         "total_invalid_guesses": 0,
         "first_move_made": "2024-03-19",
         "most_recent_move": "2024-03-19",
-        "guess_history": {"CRATE": 1},
+        "guess_history": {"CRATE": 1, "FRAUD": 1},
     },
 }
