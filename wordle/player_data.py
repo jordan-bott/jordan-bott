@@ -148,4 +148,12 @@ player_data = {
         "most_recent_move": "2024-03-19",
         "guess_history": {"CRATE": 1, "FRAUD": 1, "DRAMA": 1, "DRANK": 1},
     },
+    "MatthewChou": {
+        "total_moves": 1,
+        "total_winning_moves": 0,
+        "total_invalid_guesses": 0,
+        "first_move_made": "2024-03-21",
+        "most_recent_move": "2024-03-21",
+        "guess_history": {"GREAT": 1},
+    },
 }
