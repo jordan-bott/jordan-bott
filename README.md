@@ -7,6 +7,19 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 
 
 <!--START_SECTION:waka-->
+
+```txt
+From: 14 March 2024 - To: 21 March 2024
+
+Total Time: 2 hrs 43 mins
+
+JavaScript   1 hr 26 mins    █████████████░░░░░░░░░░░░   52.40 %
+Markdown     58 mins         ████████▓░░░░░░░░░░░░░░░░   35.29 %
+CSS          14 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   08.45 %
+Other        2 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.35 %
+Python       1 min           ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.09 %
+```
+
 <!--END_SECTION:waka-->
 
 # Let's Play <img src="./wordle/tiles/yellow/W.svg" width="28" /><img src="./wordle/tiles/green/O.svg" width="28" /><img src="./wordle/tiles/grey/R.svg" width="28" /><img src="./wordle/tiles/grey/D.svg" width="28" /><img src="./wordle/tiles/green/L.svg" width="28" /><img src="./wordle/tiles/grey/E.svg" width="28" />
