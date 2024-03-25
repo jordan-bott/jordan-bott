@@ -86,11 +86,11 @@ player_data = {
         "guess_history": {"SWEAR": 1},
     },
     "angelajfisher": {
-        "total_moves": 6,
+        "total_moves": 7,
         "total_winning_moves": 1,
         "total_invalid_guesses": 0,
         "first_move_made": "2024-03-12",
-        "most_recent_move": "2024-03-12",
+        "most_recent_move": "2024-03-25",
         "guess_history": {
             "TRACK": 1,
             "BRINE": 1,
@@ -98,6 +98,7 @@ player_data = {
             "GROSS": 1,
             "GROWL": 1,
             "GROWN": 1,
+            "ALIVE": 1,
         },
     },
     "JohnathanNiles": {
