@@ -1,8 +1,8 @@
 lifetime_data = {
-    "moves_made": 83,
-    "games_played": 16,
+    "moves_made": 84,
+    "games_played": 17,
     "players": 14,
-    "wins": 15,
+    "wins": 16,
     "losses": 1,
     "invalid_guesses": 4,
     "words_guessed": {
@@ -52,7 +52,7 @@ lifetime_data = {
         "PRISM": 1,
         "MOTEL": 1,
         "APPLE": 1,
-        "LABEL": 1,
+        "LABEL": 2,
         "BAGEL": 1,
         "SNOWY": 2,
         "FLICK": 1,
@@ -94,5 +94,6 @@ lifetime_data = {
         "GLOSS",
         "SPADE",
         "DRANK",
+        "LABEL",
     ],
 }

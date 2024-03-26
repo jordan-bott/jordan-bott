@@ -1,10 +1,10 @@
 player_data = {
     "jordan-bott": {
-        "total_moves": 40,
-        "total_winning_moves": 6,
+        "total_moves": 41,
+        "total_winning_moves": 7,
         "total_invalid_guesses": 3,
         "first_move_made": "2024-03-10",
-        "most_recent_move": "2024-03-25",
+        "most_recent_move": "2024-03-26",
         "guess_history": {
             "UNDER": 1,
             "QUEER": 1,
@@ -28,7 +28,7 @@ player_data = {
             "GIRLY": 1,
             "MOTEL": 1,
             "APPLE": 1,
-            "LABEL": 1,
+            "LABEL": 2,
             "BAGEL": 1,
             "SNOWY": 1,
             "FLICK": 1,
