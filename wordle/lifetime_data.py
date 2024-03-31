@@ -1,8 +1,8 @@
 lifetime_data = {
-    "moves_made": 87,
-    "games_played": 17,
+    "moves_made": 88,
+    "games_played": 18,
     "players": 14,
-    "wins": 16,
+    "wins": 17,
     "losses": 1,
     "invalid_guesses": 4,
     "words_guessed": {
@@ -78,6 +78,7 @@ lifetime_data = {
         "MALES": 1,
         "CREST": 1,
         "BRISK": 1,
+        "SPECK": 1,
     },
     "wordle_words": [
         "EASEL",
@@ -97,5 +98,6 @@ lifetime_data = {
         "SPADE",
         "DRANK",
         "LABEL",
+        "SPECK",
     ],
 }

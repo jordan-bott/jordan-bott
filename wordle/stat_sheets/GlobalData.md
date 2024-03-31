@@ -1,9 +1,9 @@
 |              |                |
 | ---------------- | ----------------------------- |
-| Total Moves Made | 87 |
-| Total Games Played | 17 |
+| Total Moves Made | 88 |
+| Total Games Played | 18 |
 | Total Players Participated | 14 |
-| Total Wins | 16 |
+| Total Wins | 17 |
 | Total Losses | 1 |
 | Total Invalid Guesses | 4 |
 | Most Guessed Word | CRANE (5 times!) |
