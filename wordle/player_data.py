@@ -1,10 +1,10 @@
 player_data = {
     "jordan-bott": {
-        "total_moves": 47,
+        "total_moves": 48,
         "total_winning_moves": 8,
         "total_invalid_guesses": 3,
         "first_move_made": "2024-03-10",
-        "most_recent_move": "2024-04-02",
+        "most_recent_move": "2024-04-04",
         "guess_history": {
             "UNDER": 1,
             "QUEER": 1,
@@ -40,6 +40,7 @@ player_data = {
             "SPECK": 1,
             "BLACK": 1,
             "SKATE": 1,
+            "DRAKE": 1,
         },
     },
     "IanKBovard": {
