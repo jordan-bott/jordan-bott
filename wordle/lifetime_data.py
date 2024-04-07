@@ -1,5 +1,5 @@
 lifetime_data = {
-    "moves_made": 93,
+    "moves_made": 94,
     "games_played": 19,
     "players": 14,
     "wins": 18,
@@ -83,6 +83,7 @@ lifetime_data = {
         "SKATE": 1,
         "DRAKE": 1,
         "AWAKE": 1,
+        "HARES": 1,
     },
     "wordle_words": [
         "EASEL",
