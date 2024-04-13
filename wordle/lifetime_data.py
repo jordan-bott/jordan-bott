@@ -1,5 +1,5 @@
 lifetime_data = {
-    "moves_made": 96,
+    "moves_made": 97,
     "games_played": 20,
     "players": 14,
     "wins": 19,
@@ -14,7 +14,7 @@ lifetime_data = {
         "FEARS": 1,
         "BLEAK": 1,
         "EASEL": 1,
-        "PLANT": 5,
+        "PLANT": 6,
         "TALLY": 1,
         "LATTE": 2,
         "LATHE": 1,

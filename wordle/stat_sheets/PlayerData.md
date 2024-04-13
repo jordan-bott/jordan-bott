@@ -1,7 +1,7 @@
 
 | Player Name | Total Moves | Total Winning Moves | Total Invalid Guesses | First Move Made | Most Recent Move | Most Guessed Word |
 | ----------- | ----------- | ------------------- | --------------------- | --------------- | ---------------- | ------------- |
-| [jordan-bott](https://github.com/jordan-bott) | 53 | 10 | 3 | March 10, 2024 | April 12, 2024 | PLANT (5 times!) |
+| [jordan-bott](https://github.com/jordan-bott) | 54 | 10 | 3 | March 10, 2024 | April 13, 2024 | PLANT (6 times!) |
 | [IanKBovard](https://github.com/IanKBovard) | 2 | 1 | 0 | March 10, 2024 | March 10, 2024 | EASEL (1 times!) |
 | [daisukev](https://github.com/daisukev) | 5 | 1 | 0 | March 11, 2024 | March 11, 2024 | JOUST (1 times!) |
 | [7ingyu](https://github.com/7ingyu) | 1 | 0 | 1 | March 11, 2024 | March 11, 2024 | COEST (1 times!) |
