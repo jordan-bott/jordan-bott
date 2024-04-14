@@ -1,6 +1,6 @@
 |              |                |
 | ---------------- | ----------------------------- |
-| Total Moves Made | 97 |
+| Total Moves Made | 98 |
 | Total Games Played | 20 |
 | Total Players Participated | 14 |
 | Total Wins | 19 |

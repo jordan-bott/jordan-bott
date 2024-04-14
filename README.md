@@ -7,24 +7,11 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 
 
 <!--START_SECTION:waka-->
-
-```txt
-From: 13 March 2024 - To: 12 April 2024
-
-Total Time: 10 hrs 22 mins
-
-Markdown      3 hrs 53 mins   █████████▒░░░░░░░░░░░░░░░   36.87 %
-JavaScript    2 hrs 22 mins   █████▓░░░░░░░░░░░░░░░░░░░   22.57 %
-Python        2 hrs 3 mins    █████░░░░░░░░░░░░░░░░░░░░   19.57 %
-YAML          59 mins         ██▒░░░░░░░░░░░░░░░░░░░░░░   09.46 %
-CSS           14 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.31 %
-```
-
 <!--END_SECTION:waka-->
 
 # Let's Play <img src="./wordle/tiles/yellow/W.svg" width="28" /><img src="./wordle/tiles/green/O.svg" width="28" /><img src="./wordle/tiles/grey/R.svg" width="28" /><img src="./wordle/tiles/grey/D.svg" width="28" /><img src="./wordle/tiles/green/L.svg" width="28" /><img src="./wordle/tiles/grey/E.svg" width="28" />
 
- ![Static Badge](https://img.shields.io/badge/Total%20Players-14-mediumpurple?style=flat&labelColor=lavender)  ![Static Badge](https://img.shields.io/badge/Total%20Wins-19-darkseagreen?style=flat&labelColor=ecfbe3) ![Static Badge](https://img.shields.io/badge/Total%20Games-20-khaki?style=flat&labelColor=lightyellow) ![Static Badge](https://img.shields.io/badge/Total%20Moves-97-pink?style=flat&labelColor=lavenderblush)
+ ![Static Badge](https://img.shields.io/badge/Total%20Players-14-mediumpurple?style=flat&labelColor=lavender)  ![Static Badge](https://img.shields.io/badge/Total%20Wins-19-darkseagreen?style=flat&labelColor=ecfbe3) ![Static Badge](https://img.shields.io/badge/Total%20Games-20-khaki?style=flat&labelColor=lightyellow) ![Static Badge](https://img.shields.io/badge/Total%20Moves-98-pink?style=flat&labelColor=lavenderblush)
 
 > [!TIP]
 > Everyone is welcome to participate! This is a **collaborative** version of wordle, where players make one move at a time in a shared game. Please make as many or as few moves as you would like!
@@ -39,7 +26,7 @@ Click "make a guess" below to contribute. ⬇️
 
 | Current Game | Letters |
 | ------------ | ------- |
-| <img src="./wordle/tiles/grey/P.svg" width="40" /><img src="./wordle/tiles/grey/L.svg" width="40" /><img src="./wordle/tiles/grey/A.svg" width="40" /><img src="./wordle/tiles/grey/N.svg" width="40" /><img src="./wordle/tiles/grey/T.svg" width="40" /><br/> | <img src="./wordle/letters/white/Q.svg" width="20" /><img src="./wordle/letters/white/W.svg" width="20" /><img src="./wordle/letters/white/E.svg" width="20" /><img src="./wordle/letters/white/R.svg" width="20" /><img src="./wordle/letters/grey/T.svg" width="20" /><img src="./wordle/letters/white/Y.svg" width="20" /><img src="./wordle/letters/white/U.svg" width="20" /><img src="./wordle/letters/white/I.svg" width="20" /><img src="./wordle/letters/white/O.svg" width="20" /><img src="./wordle/letters/grey/P.svg" width="20" /><br /><img src="./wordle/letters/grey/A.svg" width="20" /><img src="./wordle/letters/white/S.svg" width="20" /><img src="./wordle/letters/white/D.svg" width="20" /><img src="./wordle/letters/white/F.svg" width="20" /><img src="./wordle/letters/white/G.svg" width="20" /><img src="./wordle/letters/white/H.svg" width="20" /><img src="./wordle/letters/white/J.svg" width="20" /><img src="./wordle/letters/white/K.svg" width="20" /><img src="./wordle/letters/grey/L.svg" width="20" /><br /><img src="./wordle/letters/white/Z.svg" width="20" /><img src="./wordle/letters/white/X.svg" width="20" /><img src="./wordle/letters/white/C.svg" width="20" /><img src="./wordle/letters/white/V.svg" width="20" /><img src="./wordle/letters/white/B.svg" width="20" /><img src="./wordle/letters/grey/N.svg" width="20" /><img src="./wordle/letters/white/M.svg" width="20" /> |
+| <img src="./wordle/tiles/grey/P.svg" width="40" /><img src="./wordle/tiles/grey/L.svg" width="40" /><img src="./wordle/tiles/grey/A.svg" width="40" /><img src="./wordle/tiles/grey/N.svg" width="40" /><img src="./wordle/tiles/grey/T.svg" width="40" /><br/><img src="./wordle/tiles/green/S.svg" width="40" /><img src="./wordle/tiles/grey/C.svg" width="40" /><img src="./wordle/tiles/grey/O.svg" width="40" /><img src="./wordle/tiles/yellow/R.svg" width="40" /><img src="./wordle/tiles/grey/E.svg" width="40" /><br/> | <img src="./wordle/letters/white/Q.svg" width="20" /><img src="./wordle/letters/white/W.svg" width="20" /><img src="./wordle/letters/grey/E.svg" width="20" /><img src="./wordle/letters/yellow/R.svg" width="20" /><img src="./wordle/letters/grey/T.svg" width="20" /><img src="./wordle/letters/white/Y.svg" width="20" /><img src="./wordle/letters/white/U.svg" width="20" /><img src="./wordle/letters/white/I.svg" width="20" /><img src="./wordle/letters/grey/O.svg" width="20" /><img src="./wordle/letters/grey/P.svg" width="20" /><br /><img src="./wordle/letters/grey/A.svg" width="20" /><img src="./wordle/letters/green/S.svg" width="20" /><img src="./wordle/letters/white/D.svg" width="20" /><img src="./wordle/letters/white/F.svg" width="20" /><img src="./wordle/letters/white/G.svg" width="20" /><img src="./wordle/letters/white/H.svg" width="20" /><img src="./wordle/letters/white/J.svg" width="20" /><img src="./wordle/letters/white/K.svg" width="20" /><img src="./wordle/letters/grey/L.svg" width="20" /><br /><img src="./wordle/letters/white/Z.svg" width="20" /><img src="./wordle/letters/white/X.svg" width="20" /><img src="./wordle/letters/grey/C.svg" width="20" /><img src="./wordle/letters/white/V.svg" width="20" /><img src="./wordle/letters/white/B.svg" width="20" /><img src="./wordle/letters/grey/N.svg" width="20" /><img src="./wordle/letters/white/M.svg" width="20" /> |
 
 Do you love stats? Check out these: &ensp; [![Static Badge](https://img.shields.io/badge/PLAYER%20STATS-darkseagreen?style=flat)](./wordle/stat_sheets/PlayerData.md) &nbsp;  [![Static Badge](https://img.shields.io/badge/GLOBAL%20STATS-darkseagreen?style=flat)](./wordle/stat_sheets/GlobalData.md)
 
