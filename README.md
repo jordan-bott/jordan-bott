@@ -9,7 +9,7 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 <!--START_SECTION:waka-->
 
 ```txt
-From: 08 May 2024 - To: 07 June 2024
+From: 09 May 2024 - To: 08 June 2024
 
 Total Time: 2 hrs 31 mins
 
