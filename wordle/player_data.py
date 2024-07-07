@@ -1,7 +1,7 @@
 player_data = {
     "jordan-bott": {
-        "total_moves": 62,
-        "total_winning_moves": 11,
+        "total_moves": 63,
+        "total_winning_moves": 12,
         "total_invalid_guesses": 3,
         "first_move_made": "2024-03-10",
         "most_recent_move": "2024-07-07",
@@ -52,6 +52,7 @@ player_data = {
             "EXCEL": 1,
             "SOLES": 1,
             "WHELM": 1,
+            "FIELD": 1,
         },
     },
     "IanKBovard": {
