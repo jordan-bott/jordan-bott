@@ -1,9 +1,9 @@
 game_data = {
     "wordle_index": 726,
-    "turn_number": 2,
-    "guessed_words": ["PLANT", "LEVER"],
+    "turn_number": 3,
+    "guessed_words": ["PLANT", "LEVER", "EXCEL"],
     "players": ["jordan-bott"],
-    "schema": '<img src="./wordle/tiles/grey/P.svg" width="40" /><img src="./wordle/tiles/yellow/L.svg" width="40" /><img src="./wordle/tiles/grey/A.svg" width="40" /><img src="./wordle/tiles/grey/N.svg" width="40" /><img src="./wordle/tiles/grey/T.svg" width="40" /><br/><img src="./wordle/tiles/yellow/L.svg" width="40" /><img src="./wordle/tiles/yellow/E.svg" width="40" /><img src="./wordle/tiles/grey/V.svg" width="40" /><img src="./wordle/tiles/yellow/E.svg" width="40" /><img src="./wordle/tiles/grey/R.svg" width="40" /><br/>',
+    "schema": '<img src="./wordle/tiles/grey/P.svg" width="40" /><img src="./wordle/tiles/yellow/L.svg" width="40" /><img src="./wordle/tiles/grey/A.svg" width="40" /><img src="./wordle/tiles/grey/N.svg" width="40" /><img src="./wordle/tiles/grey/T.svg" width="40" /><br/><img src="./wordle/tiles/yellow/L.svg" width="40" /><img src="./wordle/tiles/yellow/E.svg" width="40" /><img src="./wordle/tiles/grey/V.svg" width="40" /><img src="./wordle/tiles/yellow/E.svg" width="40" /><img src="./wordle/tiles/grey/R.svg" width="40" /><br/><img src="./wordle/tiles/yellow/E.svg" width="40" /><img src="./wordle/tiles/grey/X.svg" width="40" /><img src="./wordle/tiles/grey/C.svg" width="40" /><img src="./wordle/tiles/yellow/E.svg" width="40" /><img src="./wordle/tiles/yellow/L.svg" width="40" />',
     "letter_schema": [
         '<img src="./wordle/letters/white/Q.svg" width="20" />',
         '<img src="./wordle/letters/white/W.svg" width="20" />',
@@ -27,8 +27,8 @@ game_data = {
         '<img src="./wordle/letters/yellow/L.svg" width="20" />',
         "<br /> &ensp; &ensp;",
         '<img src="./wordle/letters/white/Z.svg" width="20" />',
-        '<img src="./wordle/letters/white/X.svg" width="20" />',
-        '<img src="./wordle/letters/white/C.svg" width="20" />',
+        '<img src="./wordle/letters/grey/X.svg" width="20" />',
+        '<img src="./wordle/letters/grey/C.svg" width="20" />',
         '<img src="./wordle/letters/grey/V.svg" width="20" />',
         '<img src="./wordle/letters/white/B.svg" width="20" />',
         '<img src="./wordle/letters/grey/N.svg" width="20" />',
