@@ -79,5 +79,5 @@ def create_schema(wordle_word, guess):
 
     # turn schema back into a string, and add a line break
     schema_str = "".join(schema)
-    schema_str += "<br/>"
+    # schema_str += "<br/>"
     return [schema_str, letter_schema]

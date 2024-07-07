@@ -19,7 +19,7 @@ new_letter_schmea = [
     '<img src="./wordle/letters/white/J.svg" width="20" />',
     '<img src="./wordle/letters/white/K.svg" width="20" />',
     '<img src="./wordle/letters/white/L.svg" width="20" />',
-    "<br /> &ensp; &ensp;",
+    "<br /> &ensp; &thinsp; &thinsp;",
     '<img src="./wordle/letters/white/Z.svg" width="20" />',
     '<img src="./wordle/letters/white/X.svg" width="20" />',
     '<img src="./wordle/letters/white/C.svg" width="20" />',
