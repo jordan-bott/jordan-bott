@@ -1,7 +1,7 @@
 player_data = {
     "jordan-bott": {
-        "total_moves": 56,
-        "total_winning_moves": 10,
+        "total_moves": 57,
+        "total_winning_moves": 11,
         "total_invalid_guesses": 3,
         "first_move_made": "2024-03-10",
         "most_recent_move": "2024-07-07",
@@ -47,6 +47,7 @@ player_data = {
             "DREAM": 1,
             "SCORE": 1,
             "SMIRK": 1,
+            "SHRUG": 1,
         },
     },
     "IanKBovard": {
