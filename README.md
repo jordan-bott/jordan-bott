@@ -9,11 +9,12 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 <!--START_SECTION:waka-->
 
 ```txt
-From: 28 December 2024 - To: 27 January 2025
+From: 29 December 2024 - To: 28 January 2025
 
-Total Time: 1 hr 23 mins
+Total Time: 4 hrs 41 mins
 
-JavaScript   1 hr 23 mins    █████████████████████████   100.00 %
+JavaScript   4 hrs 41 mins   █████████████████████████   99.99 %
+Git          0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
 ```
 
 <!--END_SECTION:waka-->
