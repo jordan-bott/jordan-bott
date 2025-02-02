@@ -1,7 +1,7 @@
 player_data = {
     "jordan-bott": {
-        "total_moves": 66,
-        "total_winning_moves": 12,
+        "total_moves": 67,
+        "total_winning_moves": 13,
         "total_invalid_guesses": 3,
         "first_move_made": "2024-03-10",
         "most_recent_move": "2025-02-02",
@@ -55,6 +55,7 @@ player_data = {
             "FIELD": 1,
             "STYLE": 1,
             "HOTEL": 1,
+            "LITHE": 1,
         },
     },
     "IanKBovard": {
