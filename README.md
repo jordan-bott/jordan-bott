@@ -9,7 +9,7 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 <!--START_SECTION:waka-->
 
 ```txt
-From: 13 January 2025 - To: 12 February 2025
+From: 14 January 2025 - To: 13 February 2025
 
 Total Time: 10 hrs 4 mins
 
