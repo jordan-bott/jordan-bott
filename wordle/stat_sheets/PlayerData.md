@@ -15,3 +15,4 @@
 | [dreramirez91](https://github.com/dreramirez91) | 3 | 1 | 0 | March 18, 2024 | March 18, 2024 | SPADE (1 times!) |
 | [aleetaing](https://github.com/aleetaing) | 4 | 1 | 0 | March 19, 2024 | March 19, 2024 | DRANK (1 times!) |
 | [MatthewChou](https://github.com/MatthewChou) | 1 | 0 | 0 | March 21, 2024 | March 21, 2024 | GREAT (1 times!) |
+| [D-SNED](https://github.com/D-SNED) | 1 | 0 | 0 | February 08, 2026 | February 08, 2026 | TWILL (1 times!) |
