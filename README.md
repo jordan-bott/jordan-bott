@@ -9,15 +9,15 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 <!--START_SECTION:waka-->
 
 ```txt
-From: 29 April 2026 - To: 29 May 2026
+From: 30 April 2026 - To: 30 May 2026
 
-Total Time: 7 hrs 23 mins
+Total Time: 9 hrs 10 mins
 
-JavaScript   6 hrs 13 mins         ███████████████████▓░░░░░   78.46 %
-Other        32 mins               █▓░░░░░░░░░░░░░░░░░░░░░░░   06.89 %
-Python       18 mins               █░░░░░░░░░░░░░░░░░░░░░░░░   03.94 %
-Bash         17 mins               █░░░░░░░░░░░░░░░░░░░░░░░░   03.57 %
-Git Config   12 mins               ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.63 %
+JavaScript   8 hrs 1 min           ████████████████████▓░░░░   82.41 %
+Other        32 mins               █▒░░░░░░░░░░░░░░░░░░░░░░░   05.63 %
+Python       18 mins               ▓░░░░░░░░░░░░░░░░░░░░░░░░   03.22 %
+Bash         17 mins               ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.92 %
+Git Config   12 mins               ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.15 %
 ```
 
 <!--END_SECTION:waka-->
