@@ -9,11 +9,15 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 <!--START_SECTION:waka-->
 
 ```txt
-From: 03 June 2026 - To: 03 July 2026
+From: 04 June 2026 - To: 04 July 2026
 
-Total Time: 0 secs
+Total Time: 53 mins
 
-No activity tracked
+TypeScript   19 mins               ████████▒░░░░░░░░░░░░░░░░   33.16 %
+JSON         17 mins               ███████▒░░░░░░░░░░░░░░░░░   29.10 %
+JavaScript   9 mins                ████░░░░░░░░░░░░░░░░░░░░░   16.66 %
+Other        6 mins                ██▓░░░░░░░░░░░░░░░░░░░░░░   10.34 %
+YAML         2 mins                █░░░░░░░░░░░░░░░░░░░░░░░░   03.44 %
 ```
 
 <!--END_SECTION:waka-->
