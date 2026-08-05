@@ -9,15 +9,15 @@ Hi! 👋🏼 I'm Jordan, welcome to my github!
 <!--START_SECTION:waka-->
 
 ```txt
-From: 03 July 2026 - To: 02 August 2026
+From: 04 July 2026 - To: 03 August 2026
 
-Total Time: 2 hrs 3 mins
+Total Time: 1 hr 9 mins
 
-TypeScript   39 mins               ███████▓░░░░░░░░░░░░░░░░░   30.17 %
-JavaScript   37 mins               ███████▒░░░░░░░░░░░░░░░░░   28.76 %
-JSON         36 mins               ███████░░░░░░░░░░░░░░░░░░   27.77 %
-Other        8 mins                █▓░░░░░░░░░░░░░░░░░░░░░░░   06.14 %
-TSConfig     2 mins                ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.17 %
+JavaScript   27 mins               █████████▓░░░░░░░░░░░░░░░   38.88 %
+TypeScript   19 mins               ███████░░░░░░░░░░░░░░░░░░   27.67 %
+JSON         19 mins               ██████▓░░░░░░░░░░░░░░░░░░   26.67 %
+TSConfig     2 mins                █░░░░░░░░░░░░░░░░░░░░░░░░   03.63 %
+Other        1 min                 ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.63 %
 ```
 
 <!--END_SECTION:waka-->
